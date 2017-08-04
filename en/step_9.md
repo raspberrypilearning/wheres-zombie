@@ -32,7 +32,6 @@ if( distance < tolerance ){
     alert("Found it!")
 }
 ```
-
+- what did they find
 - remove the marker from the map
-
-- Safety note about where you put items
+- add a score
