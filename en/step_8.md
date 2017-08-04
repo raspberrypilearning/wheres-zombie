@@ -6,15 +6,15 @@ When you tested your map on your phone, you probably thought you were being atta
 
 + Locate the line `var zombie_map;` and underneath it add a new variable called `old_position`.
 
-+ Inside the `initMap()` function, create a marker called `old_position` and initialise it to the same location you initialised your map to originally. It actually doesn't matter what location this marker is initialised at, as its location value will be overwritten almost immediately, but it does need to be initialised.
++ Inside the `initMap()` function, create a marker called `old_position` at the same location you centered your map on when you created it. (It actually doesn't matter what location this marker is initialised at, as its location value will be overwritten almost immediately, but it does need to be initialised. We just used the map location because it was handy!)
 
-+ Locate your function `set_my_position()`. Add a line of code so that the **first** thing you do in the function is to remove the old position marker:
++ Locate your function `set_my_position()`. Add a line of code so that the **first** thing you do in the function is to remove the old position marker from the map. `null` is a special key word that in this case means "no map".
 
 ```JavaScript
 old_position.setMap(null);
 ```
 
-+ Add another line of code but this time as the **last** thing you do in the function. This saves the new position marker you just created as the `old_position` so that next time when we create a new marker we know where the previous one was.
++ Add another line of code to the function `set_my_position()`, but this time it should be the **last** thing you do in the function. This saves the new position marker you just created as the `old_position` so that next time when we create a new marker we know where the previous one was.
 
 ```JavaScript
 old_position = marker;
