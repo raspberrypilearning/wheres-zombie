@@ -33,10 +33,10 @@ Now that you have put your code online, your Google Maps API key is visible to e
 
 + Click on **Credentials** on the left, then click on your API key
 
-![Select a project](images/select-a-project.png)
+![Select a project](images/credentials.png)
 
 + Under **Key restriction**, select **HTTP referrers** and in the box, add the base URL of your website, with a `*` at each end. For example, my code was hosted at `http://lawsie.github.io/` so I put `*lawsie.github.io/*`. Press save.
 
 ![Key restriction](images/key-restriction.png)
 
-+ Your key should now only work on your website, and not anywhere else. Note that if you now try to look at the map on your computer, it will not work because the request is not coming from your website. You might want to create an extra API key that is unrestricted, and ONLY use that key on your private computer for testing. 
++ Your key should now only work on your website, and not anywhere else. Note that if you now try to look at the map on your computer, it will not work because the request is not coming from your website. You might want to create an extra API key that is unrestricted, and ONLY use that key on your private computer for testing.
