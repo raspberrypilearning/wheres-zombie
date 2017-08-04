@@ -24,4 +24,4 @@
 var markers = data.split("\n");
 ```
 
-We end up with an **array** of markers.
+We end up with an **array** of marker data which we will plot onto the map in the next step.
