@@ -13,4 +13,5 @@ site_areas:
 steps:
   - title: Introduction
   - title: What you will need
-  - title: Step title
+  - title: Create the map
+  - title: Add points of interest

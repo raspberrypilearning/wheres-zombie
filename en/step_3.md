@@ -1,4 +1,4 @@
-## Set up your page
+## Create the map
 
 + Create and save a web page called index.html. You will need to use a text editor on your computer to do this rather than using an online HTML editor.
 
