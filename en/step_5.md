@@ -1,5 +1,7 @@
 ## Creating markers
 
++ Below the line `var zombie_map;` add another line to create a variable called `all_markers` and set it equal to `[]` which is a blank array. This will eventually store a reference to each of the markers we are about to create.
+
 + Position your cursor inside the `initMap()` function, just after the code for creating the zombie map.
 
 ![Add marker code here](images/add-marker-code.png)
@@ -60,9 +62,13 @@ You can add an icon by adding another line within the marker to specify `icon: "
 If you specify a fixed filename like `"nameofpicture.png"` then the marker icon will always be the same. Which number item in the `marker_data` array contains the picture for each piece of data? Don't forget that we start counting in the array at 0, so the first item in the array (the latitude) is `marker_data[0]`.
 --- /hint ---
 
-
 --- /hints ---
 
++ Immediately after the end of the marker code, but still within the loop, add this line to save a reference to this marker in our list of `all_markers`. We will need this list in a later step.
+
+```JavaScript
+all_markers.push(marker);
+```
 
 + Save your code and refresh the page. Test that all of your markers show up properly on the map. If they do not show up properly, perhaps you could look in the JavaScript **console** to see if there are any error messages for you to resolve?
 
