@@ -16,3 +16,4 @@ steps:
   - title: Create the map
   - title: Retrieve the marker data
   - title: Creating markers
+  - title: Display your current position
