@@ -1,4 +1,4 @@
-## Add points of interest
+## Retrieve the marker data
 
 + You can decide where your points of interest will be by creating a [Zombie apocalypse survival map](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map). Here is an example map we created for a zombie game in the local park, and the data for this map which was copied from the **console**.
 
@@ -18,18 +18,10 @@
 
 + Locate the line of code `var zombie_map;`. Underneath it, on a blank line, create a new variable called `data` and set it equal to the data you copied from the console. Pasting in your data might make your editor complain and highlight the lines of code in a strange way, so put a backtick (\`) at the start and the end of the data to tell JavaScript it is a string which is split over multiple lines.
 
-+ We want to handle each marker separately, so let's add some code on the following line to split up the data into separate lines. Each individual line is data for one marker, so we will split the data whenever there is a `\n` which is an invisible newline character.
++ We want to handle each marker separately, so let's add some code on the following line to split up the data into separate lines. Each individual line is data for one marker, so we will split the data wherever the invisible newline character `\n` is detected.
 
 ```JavaScript
 var markers = data.split("\n");
 ```
 
 We end up with an **array** of markers.
-
-+ Now position your cursor inside the `initMap()` function, just after the code for creating the zombie map.
-
-![Add marker code here](images/add-marker-code.png)
-
-+ Create a **for loop** that will run once for every marker in the `markers` array we just created.
-
-[[[generic-javascript-for-loop]]]
