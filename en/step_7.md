@@ -1,4 +1,4 @@
-## Testing the GPS
+## Test the GPS
 
 You probably want to test whether your player icon moves around as you move around, but to do this you'll need to go outside. This could be pretty inconvenient while holding a computer, so let's upload the web page to the internet so that you can access it on your phone!
 

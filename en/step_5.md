@@ -1,4 +1,4 @@
-## Creating markers
+## Create the markers
 
 + Below the line `var zombie_map;` add another line to create a variable called `all_markers` and set it equal to `[]` which is a blank array. This will eventually store a reference to each of the markers we are about to create.
 
