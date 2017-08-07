@@ -77,7 +77,7 @@ IF what they found isn't a zombie
 --- hints ---
 
 --- hint ---
-We already worked out what they found and stored it in the variable `what_is_it`. Use this to create a condition which says that thec contents of this variable is not equal to (`!=`) zombie.
+We already worked out what they found and stored it in the variable `what_is_it`. Use this to create a condition which says that the contents of this variable is not equal to (`!=`) zombie.
 --- /hint ----
 
 --- hint ---
@@ -100,3 +100,5 @@ if( what_is_it != "zombie"){
 --- /hint ----
 
 --- /hints ---
+
++ Now it's time to test out your game! Have a read through the safety tips in the next step before you test the game.
