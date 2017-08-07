@@ -9,6 +9,7 @@
 
 + Internet browser (e.g. Google Chrome or Safari)
 + Text editor (e.g. Notepad or Atom)
++ Some web hosting - you may have your own or you host your game for free on GitHub
 
 ### Additional Resources
 
