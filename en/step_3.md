@@ -1,5 +1,7 @@
 ## Create the map
 
+If you have already done the [Zombie apocalypse survival map](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map) project, you will notice that the first few steps of this project are very similar.  Make sure you start a fresh page for this project rather than reusing your old code otherwise you will get confused during the later stages. 
+
 + Create and save a web page called index.html. You will need to use a text editor on your computer to do this rather than using an online HTML editor.
 
 [[[generic-html-create-and-save]]]
