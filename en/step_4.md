@@ -18,6 +18,8 @@
 
 + Locate the line of code `var zombie_map;`. Underneath it, on a blank line, create a new variable called `data` and set it equal to the data you copied from the console. Pasting in your data might make your editor complain and highlight the lines of code in a strange way, so put a backtick (\`) at the start and the end of the data to tell JavaScript it is a string which is split over multiple lines.
 
+[[[generic-javascript-create-variable]]]
+
 + We want to handle each marker separately, so let's add some code on the following line to split up the data into separate lines. Each individual line is data for one marker, so we will split the data wherever the invisible newline character `\n` is detected.
 
 ```JavaScript
