@@ -33,9 +33,9 @@ marker_data = marker_data.split(" ");
 ```
 
 We will end up with an array called `marker_data` which contains three values:
-- The latitude
-- The longitude
-- The name of the marker icon image file
+    - The latitude
+    - The longitude
+    - The name of the marker icon image file
 
 + To be able to add the marker at the correct position, you need to create a `LatLng` object.
 
