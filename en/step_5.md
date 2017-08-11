@@ -68,7 +68,15 @@ You can add an icon by adding another line within the marker to specify `icon: "
 --- /hint ---
 
 --- hint ---
-If you specify a fixed filename like `"nameofpicture.png"` then the marker icon will always be the same. Which number item in the `marker_data` array contains the picture for each piece of data? Don't forget that we start counting in the array at 0, so the first item in the array (the latitude) is `marker_data[0]`.
+If you specify a fixed filename like `"nameofpicture.png"` then the marker icon will always be the same. We created a variable earlier which contains the picture name - put the variable `emoji` as the specified icon to use the emoji from the data.
+
+```JavaScript
+var marker = new google.maps.Marker({
+  position: marker_position,
+  map: zombie_map,
+  icon: emoji
+});
+```
 --- /hint ---
 
 --- /hints ---
