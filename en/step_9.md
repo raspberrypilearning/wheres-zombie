@@ -87,6 +87,7 @@ IF what they found isn't a zombie
     score + 10 points
     ALERT Your score is + score
 ```
+Add your code here:
 
 ![Add a score](images/add-score.png)
 
