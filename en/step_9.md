@@ -12,7 +12,7 @@ src="https://maps.googleapis.com/maps/api/js?key=A1b2c3d4e5f6g7h8i9j10k11&callba
 </script>
 ```
 
-+ Immediately after `initMap` and before the ending `"`, add `&libraries=geometry`, being careful that you do not add any spaces.
++ In the line of code above, immediately after `initMap` but before the ending `"`, add `&libraries=geometry`, being careful that you do not add any spaces.
 
 + Now locate your `set_my_position()` function and position your cursor immediately below the line `old_position = marker;`.
 
@@ -37,16 +37,27 @@ if( distance < tolerance ){
 }
 ```
 
-+ At the moment we are not sure what it is they have found. Instead of just saying "Found it", lets tell the player what it is they have found by getting the name of the icon used and removing the `.png` part from the end. For example, if they found `hospital.png` the alert will say `Found the hospital`
+At the moment we are not sure what it is they have found.
+
++ Remove the line saying "Found it" and instead get the name of the icon used:
 
 ```javascript
 var what_is_it = all_markers[i].getIcon();
+```
+
++  Remove the `.png` part from the name of the icon. For example, if they found `hospital.png` we just want to say "hospital"
+
+```javascript
 what_is_it = what_is_it.replace(".png", "");
 
+```
++ Create an alert - in this case it will say `Found the hospital`:
+
+```javascript
 alert("Found the " + what_is_it );
 ```
 
-+ We also want to remove the found marker from the map so that the game does not keep telling them they found the same thing. The marker we are looking at is called `all_markers[i]` in this case. See if you can remember how to remove a marker from the map and add the code just underneath your alert.
++ Remove the `all_markers[i]` marker from the map so that the game does not keep telling the player they found the same thing.
 
 --- hints ---
 --- hint ---
@@ -63,13 +74,15 @@ You will need to use the `.setMap()` method on the marker.
 
 --- /hints ---
 
-+ Finally, let's add a score. Once again, locate the line `var zombie_map;` and add another line of code to create a variable called `score`.
++ Finally, let's add a score. Once again, locate the line `var zombie_map;` and underneath it add another line of code to create a variable called `score`.
 
-+ If the player found a zombie, in my game they don't get any points. Perhaps if you are feeling particularly mean you could make your player get minus points in your game! If they found a hospital or a weapon store they get 10 points.
+If the player found a zombie, in my game they don't get any points. Perhaps if you are feeling particularly mean you could make your player get minus points in your game! If they found a hospital or a weapon store they get 10 points.
 
 ![Add a score](images/add-score.png)
 
-Here is some pseudo code for the code we want to add. Translate this pseudo code into real code and add it to your program.
+Here is some pseudo code for the code we want to add.
+
++ Translate this pseudo code into real code and add it to your program.
 
 ```html
 IF what they found isn't a zombie
