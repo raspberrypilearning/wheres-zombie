@@ -32,22 +32,25 @@ var marker_data = markers[i].trim();
 marker_data = marker_data.split(" ");
 ```
 
-We will end up with an array called `marker_data` which contains three values:
-    - The latitude
-    - The longitude
-    - The name of the marker icon image file
+We will end up with an array called `marker_data` which contains three values. In order, these are: the latitude, the longitude and the marker image file.
+
++ Create variables to name each of these values. The first is done for you.
+
+```JavaScript
+var latitude = marker_data[0];
+var longitude = ?;
+var emoji = ?;
+```
 
 + To be able to add the marker at the correct position, you need to create a `LatLng` object.
 
 ```JavaScript
-var marker_position = new google.maps.LatLng(marker_data[0], ###);
+var marker_position = new google.maps.LatLng(?, ?);
 ```
 
-The **latitude** value is the first item in the `marker_data` array, but since the numbering of items in the array starts at 0 we have to refer to it as `marker_data[0]` and NOT `marker_data[1]`.
+Add this line of code immediately underneath the previous line, replacing `?` with the latitude and longitude variables.
 
-Add this line of code immediately underneath the previous line, replacing `###` with the **longitude** value from the `marker_data` array. Remember that the latitude value was `marker_data[0]` - can you work out what this should be?
-
-+ Still inside the loop, write some code to create a marker at the `marker_position`, with the `icon:` as the specified emoji.
++ Still inside the loop, write some code to create a marker at the `marker_position`, with the `icon:` set to the emoji variable.
 
 [[[generic-api-google-maps-marker]]]
 
