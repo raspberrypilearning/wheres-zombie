@@ -29,7 +29,7 @@ This code checks whether the geolocation can be found using the web browser, and
 var pos = new google.maps.LatLng(###, ###);
 ```
 
-+ Still inside the function, create a marker which is situated at the LatLng object's position. You should choose a different icon for this marker - we chose to represent the player as a smiley face but you can choose any emoji you like. Don't forget to copy and paste the emoji image file into the same folder as your `index.html` code. ![Player emoji](images/player.png)
++ Still inside the function, create a marker which is situated at the LatLng object's position. Creating a marker is the same as the way you created markers in the previous step. You should choose a different icon for this marker - we chose to represent the player as a smiley face but you can choose any emoji you like. Don't forget to copy and paste the emoji image file into the same folder as your `index.html` code. ![Player emoji](images/player.png)
 
 + Save your code and refresh the internet browser. If your internet browser pops up a warning asking whether it can use your location data, press "Allow". You should see your player emoji appear wherever you currently are - the location should be pretty accurate.
 

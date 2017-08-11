@@ -4,6 +4,8 @@ When you tested your map on your phone, you probably thought you were being atta
 
 ![Attack of the smileys](images/attack-smileys.png)
 
+Continue editing the code on your computer. You can re-upload the code to GitHub if you want to test it outside.
+
 + Locate the line `var zombie_map;` and underneath it add a new variable called `old_position`.
 
 + Inside the `initMap()` function, create a marker called `old_position` at the same location you centered your map on when you created it. (It actually doesn't matter what location this marker is initialised at, as its location value will be overwritten almost immediately, but it does need to be initialised. We just used the map location because it was handy!)

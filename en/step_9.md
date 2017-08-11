@@ -4,7 +4,7 @@ Now we need to make the game work! As the player moves around, we will check whe
 
 + Locate the line `var zombie_map;` and underneath it add a new variable called `tolerance`. This is how close the player will have to be to the location in metres to be considered to have found it. You can choose how close this is - the smaller the number of metres you choose, the closer the player will have to get to the exact location to find the item. We chose a tolerance of 10.
 
-+ To be able to calculate the distance between two points on a map, we need to use some of Google's technical wizardry from their geometry library. Locate the code near the bottom of the page which tells the map your API key:
+To be able to calculate the distance between two points on a map, we need to use some of Google's technical wizardry from their geometry library. Locate the code near the bottom of the page which tells the map your API key:
 
 ```html
 <script async defer
@@ -12,19 +12,22 @@ src="https://maps.googleapis.com/maps/api/js?key=A1b2c3d4e5f6g7h8i9j10k11&callba
 </script>
 ```
 
-Immediately after `initMap` and before the `"`, add `&libraries=geometry`, being careful that you do not add any spaces.
++ Immediately after `initMap` and before the ending `"`, add `&libraries=geometry`, being careful that you do not add any spaces.
 
 + Now locate your `set_my_position()` function and position your cursor immediately below the line `old_position = marker;`.
 
 + Create a for loop which will loop through the `all_markers` array
 
-[[[generic-javascript-for-loop]]]
+[[[generic-javascript-for-loop-array]]]
 
-+ Inside your loop, use this code to calculate the distance between the current position (`pos`) and each marker, one by one.
++ Inside your loop, use this code to calculate the distance between the current position (`pos`) and the marker we are currently examining:
 
 ```javascript
 var distance = google.maps.geometry.spherical.computeDistanceBetween(pos, all_markers[i].getPosition());
 ```
+This image shows an example of one of the calculations - how far is it between the player and the hospital marker?
+
+![What we are calculating](images/what-we-are-calculating.png)
 
 + Add an `if` statement immediately below to check whether the distance between the player and the marker we are currently examining is less than the tolerance
 
