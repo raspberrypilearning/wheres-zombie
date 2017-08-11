@@ -20,7 +20,7 @@ The first line of data looks like this:
 
 We want to end up with this data as an array so we will need to split it up just like we did in the previous step.
 
-+ Add this line of code inside your **for loop** to `trim()` any unwanted spaces from the beginning and end of the data
++ Add all of the rest of the lines of code in this step inside your **for loop**. First, `trim()` any unwanted spaces from the beginning and end of the data
 
 ```JavaScript
 var marker_data = markers[i].trim();
