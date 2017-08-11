@@ -12,25 +12,31 @@
 
 Inside the **for loop** the line of marker data we are currently looking at is `markers[i]` - the loop will add one to the variable `i` each time it runs, so we will be looking at each line of data, one by one.
 
-For example, the first line of data is as follows
+The first line of data looks like this:
 
 ```html
 51.90769026213801 -2.068905830383301 zombie.png
 ```
 
-We want to end up with this data as an array...
+We want to end up with this data as an array so we will need to split it up just like we did in the previous step.
+
++ Add this line of code inside your **for loop** to `trim()` any unwanted spaces from the beginning and end of the data
 
 ```JavaScript
-marker_data = [51.90769026213801, -2.068905830383301, "zombie.png"]
+var marker_data = markers[i].trim();
 ```
 
-...but we'd like JavaScript to do this automatically for us.
-
-Firstly, `trim()` any stray spaces from the beginning and end of the data, because we are going to split it up into individual parts wherever a space is detected. Then add this line of code inside your **for loop**.
++ Now split the string up just like we did before, but this time we will split wherever there is a space
 
 ```JavaScript
-var marker_data = markers[i].trim().split(" ");
+marker_data = marker_data.split(" ");
 ```
+
+We will end up with an array called `marker_data` which contains three values:
+- The latitude
+- The longitude
+- The name of the marker icon image file
+
 + To be able to add the marker at the correct position, you need to create a `LatLng` object.
 
 ```JavaScript
