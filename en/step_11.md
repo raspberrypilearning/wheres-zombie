@@ -7,3 +7,4 @@ Here are some ideas you could explore to improve your zombie game:
 + Randomly delete a marker after a certain amount of time - perhaps a hospital got destroyed or zombies found some of the weapons?
 + Add a more sophisticated scoring system
 + Only reveal one of the markers at a time, revealing the next one when the first is reached, forcing a more 'treasure hunt' style of play
++ Replace all of the marker images with ? icons - then you don't know until you get there if you're finding a juicy weapon store or a den of zombies!
