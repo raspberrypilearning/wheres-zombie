@@ -78,8 +78,6 @@ You will need to use the `.setMap()` method on the marker.
 
 If the player found a zombie, in my game they don't get any points. Perhaps if you are feeling particularly mean you could make your player get minus points in your game! If they found a hospital or a weapon store they get 10 points.
 
-![Add a score](images/add-score.png)
-
 Here is some pseudo code for the code we want to add.
 
 + Translate this pseudo code into real code and add it to your program.
@@ -89,6 +87,9 @@ IF what they found isn't a zombie
     score + 10 points
     ALERT Your score is + score
 ```
+
+![Add a score](images/add-score.png)
+
 
 --- hints ---
 
