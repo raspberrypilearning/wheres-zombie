@@ -6,13 +6,13 @@
 
 ![Add marker code here](images/add-marker-code.png)
 
-+ Create a **for loop** that will run once for every marker in the `markers` array we just created.
++ Create a **for loop** that will run once for every marker in the `markers` array we created in the previous step.
 
-[[[generic-javascript-for-loop]]]
+[[[generic-javascript-for-loop-array]]]
 
-+ Inside the **for loop** we will be able to access each line of marker data as `markers[i]` - the loop will add one to the variable `i` each time it runs, so we will be looking at each line of data, one by one.
+Inside the **for loop** the line of marker data we are currently looking at is `markers[i]` - the loop will add one to the variable `i` each time it runs, so we will be looking at each line of data, one by one.
 
-For example, our first line of data is as follows
+For example, the first line of data is as follows
 
 ```html
 51.90769026213801 -2.068905830383301 zombie.png
