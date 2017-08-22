@@ -1,10 +1,10 @@
 ## Introduction
 
-Use the GPS on your phone to make an outdoor zombie apocalypse game you can play with your friends. Collect the supplies to power up but avoid the zombies!
+Use the GPS on your phone to make an outdoor zombie apocalypse game you can play with your friends. Collect the supplies to power up, but avoid the zombies!
 
 ### What you will make
 
-You will make a game that you can play outside using your mobile phone's GPS capabilities. Find the power ups and avoid the zombies!
+You will make a game that you can play outside using your mobile phone's GPS capabilities. Find the power-ups and avoid the zombies!
 
 ![Example game](images/example-game.png)
 
