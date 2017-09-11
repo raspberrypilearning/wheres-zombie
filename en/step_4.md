@@ -1,6 +1,6 @@
 ## Retrieve the marker data
 
-+ You can decide where your points of interest will be by creating a [Zombie apocalypse survival map](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map). Here is an example map we created for a zombie game in the local park. The data for this map was copied from the **console**.
++ You can decide where your points of interest will be by creating a [Zombie apocalypse survival map](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"}. Here is an example map we created for a zombie game in the local park. The data for this map was copied from the **console**.
 
 ![Map with data](images/map-precreated.png)
 
