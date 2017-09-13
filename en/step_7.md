@@ -8,11 +8,11 @@ Don't forget that when you upload things to the internet, anyone can see them. I
 For the GPS to work, you will need to enable the location services on your phone. Be aware that this means that your phone will track your exact position. It is never a good idea to post your exact location in public on the internet, so to be safe, disable the location services again after you have played the zombie game to make sure no other apps can use your location data. Your location will only be used by the zombie game in the web page you have created—you know exactly what this code does, because you wrote it!
 
 ### Upload your code
-You can upload your zombie game onto any service that offers web hosting. You may already have some hosting available to you, in which case feel free to use that. We chose to use [GitHub Pages](https://pages.github.com/) because it is a trustworthy service and easy to use. To get started with it, follow these steps:
+You can upload your zombie game onto any service that offers web hosting. You may already have some hosting available to you, in which case feel free to use that. We chose to use [GitHub Pages](https://pages.github.com/){:target="_blank"} because it is a trustworthy service and easy to use. To get started with it, follow these steps:
 
-+ Sign up for a [GitHub account](https://github.com/join)
++ Sign up for a [GitHub account](https://github.com/join){:target="_blank"}
 
-+ Visit the [instructions page](https://pages.github.com/), and click on **Project site** and **Start from scratch**
++ Visit the [instructions page](https://pages.github.com/){:target="_blank"}, and click on **Project site** and **Start from scratch**
 
 ![Github pages](images/github-pages.png)
 
@@ -25,7 +25,7 @@ You can upload your zombie game onto any service that offers web hosting. You ma
 ## Restrict your API key
 Now that you have put your code online, your Google Maps API key is visible to everyone. Someone could take it and use it without your permission. You can stop this from happening by restricting where it can be used, so that it can only be used on your website.
 
-+ Head back over to the [Google APIs console](https://console.developers.google.com/flows/enableapi?apiid=picker&credential=client_key) and click on **Select a project** at the top left of the page.
++ Head back over to the [Google APIs console](https://console.developers.google.com/flows/enableapi?apiid=picker&credential=client_key){:target="_blank"} and click on **Select a project** at the top left of the page.
 
 ![Select a project](images/select-a-project.png)
 
