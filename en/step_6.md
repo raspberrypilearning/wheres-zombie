@@ -29,7 +29,7 @@ This code checks whether the player's location can be found using the web browse
 var pos = new google.maps.LatLng(###, ###);
 ```
 
-+ Still inside the function, create a marker which is situated at the LatLng object's position. You cand do this the same way you created markers in the previous step. However, you should choose a different icon for this marker. we chose to represent the player as a smiley face, but you can choose any emoji you like. Don't forget to copy and paste the emoji image file you want to use into the same folder as your `index.html` code.
++ Still inside the function, create a marker which is situated at the LatLng object's position. You can do this the same way you created markers in the previous step. However, you should choose a different icon for this marker. we chose to represent the player as a smiley face, but you can choose any emoji you like. Don't forget to copy and paste the emoji image file you want to use into the same folder as your `index.html` code.
 
 ![Player emoji](images/player.png)
 
