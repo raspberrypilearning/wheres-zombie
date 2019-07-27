@@ -1,15 +1,15 @@
-## Safety when playing the game
+## Siguranța atunci când joci jocul
 
-When you play a GPS-based game, it is important that you remain safe. Follow our tips to make sure you create a fun and safe game to play with your friends.
+Când joci un joc bazat pe GPS, este important să rămâi în siguranță. Urmează sfaturile noastre pentru a te asigura că construiești un joc distractiv și sigur pentru a te juca cu prietenii tăi.
 
-+ Set up your game map in an open area such as a park, so that you can have as much fun as possible exploring.
++ Setează-ți harta jocului într-o zonă deschisă, cum ar fi un parc, astfel încât să te poți distra cât mai mult explorând.
 
-+ Don't add markers in places which are difficult or dangerous to reach, such as in the middle of roads or near the edges of cliffs. Make your goodies tricky to find, but not deadly.
++ Nu adăuga marcaje în locuri periculoase sau dificil de explorat, cum ar fi în mijlocul străzilor sau în apropierea stâncilor. Proviziile tale sa fie dificil de găsit, dar nu mortale.
 
-+ If you find you have accidentally placed a marker inside somewhere which is private property, don't trespass, leave it alone. Just change your code for the next time you play!
++ Dacă descoperi că ai plasat din greșeală un marcaj într-un loc care este proprietate privată, nu merge în acel loc, lasă-l în pace. Pur și simplu, schimbă-ți codul pentru următoarea dată când joci!
 
-+ Get permission from a parent or guardian to play the game and make sure they are having fun playing with you or know where you are.
++ Obține permisiunea de la un părinte sau un tutore pentru a juca jocul și asigură-te că se distrează jucându-se cu tine sau știu unde te afli.
 
-+ Remember to turn off location services on your phone after playing so that you don't accidentally share your location data online with other apps.
++ Nu uita să dezactivezi serviciile de locație de pe telefonul tău după ce te joci, astfel încât să nu partajezi accidental datele locației online cu alte aplicații.
 
-+ Always play during the day, in well-lit areas. Zombies are rather keen on the dark...
++ Joacă întotdeauna în timpul zilei, în zone bine luminate. Zombii sunt destul de periculoși în întuneric...
