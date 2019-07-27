@@ -23,40 +23,40 @@ Vrem să obținem aceste date într-un tablou, așa că va trebui să le împăr
 + Adaugă toate celelalte linii de cod în acest pas în bucla for. Mai întâi, cu ajutorul funcției `trim()` elimină orice spații nedorite de la începutul și sfârșitul datelor, făcând în felul următor:
 
 ```JavaScript
-var date_marcaje = marcaje[i].trim();
+var marker_data = markers[i].trim();
 ```
 
 + Acum, împarte șirul la fel ca și înainte, dar de data aceasta împarte oriunde există un spațiu:
 
 ```JavaScript
-date_marcaje = date_marcaje.split(" ");
+marker_data = marker_data.split(" ");
 ```
 
-Dacă faci așa, vei obține un tablou numit `date_marcaje`, care conține trei valori. În ordine, acestea sunt: latitudinea, longitudinea și fișierul de imagine al marcajului.
+Dacă faci așa, vei obține un tablou numit `marker_data`, care conține trei valori. În ordine, acestea sunt: latitudinea, longitudinea și fișierul de imagine al marcajului.
 
 + Creează variabile pentru a denumi fiecare dintre aceste valori. Am numit prima variabila pentru tine:
 
 ```JavaScript
-var latitudine = date_marcaje[0];
-var longitudine = ?;
+var latitude = marker_data[0];
+var longitude = ?;
 var emoji = ?;
 ```
 
 + Pentru a putea adăuga marcajul la poziția corectă, trebuie să creezi un obiect `LatLng`.
 
 ```JavaScript
-var pozitie_marcaje = new google.maps.LatLng(###, ###);
+var marker_position = new google.maps.LatLng(###, ###);
 ```
 
 Adaugă această linie de cod imediat sub linia anterioară, înlocuind `###` cu variabilele de latitudine și longitudine.
 
-+ Tot în interiorul buclei, scrie un cod pentru a crea un marcaj la poziția `pozitie_marcaje`, cu pictograma `icon:` setată cu variabila emoji.
++ Tot în interiorul buclei, scrie un cod pentru a crea un marcaj la poziția `marker_position`, cu pictograma `icon:` setată cu variabila emoji.
 
 [[[generic-api-google-maps-marker]]]
 
-\--- hints \--- \--- hint \--- În loc să pui o latitudine/longitudine fixă ca în exemplu, folosește variabila `pozitie_marcaje` pentru a spune marcajului unde trebuie plasat. \--- /hint \---
+\--- hints \--- \--- hint \--- În loc să pui o latitudine/longitudine fixă ca în exemplu, folosește variabila `marker_position` pentru a spune marcajului unde trebuie plasat. \--- /hint \---
 
-\--- hint \--- Verifică dacă numele hărții (în exemplul `hartamea`) este identic cu numele hărții pe care ai creat-o. \--- /hint \---
+\--- hint \--- Verifică dacă numele hărții (în exemplul `mymap`) este identic cu numele hărții pe care ai creat-o. \--- /hint \---
 
 \--- hint \--- Poți adăuga o pictogramă adăugând o altă linie în marcaj pentru a specifica `icon: "numeleimaginii.png"`. Nu uita să pui o virgulă la sfârșitul liniei `map` pentru a indica faptul că există o altă proprietate a marcajului pe care dorești să o setezi. \--- /hint \---
 
@@ -64,8 +64,8 @@ Adaugă această linie de cod imediat sub linia anterioară, înlocuind `###` cu
 
 ```JavaScript
 var marker = new google.maps.Marker({
-  position: pozitie_marcaje,
-  map: harta_zombi,
+  position: marker_position,
+  map: zombie_map,
   icon: emoji
 });
 ```
@@ -74,10 +74,10 @@ var marker = new google.maps.Marker({
 
 \--- /hints \---
 
-+ Imediat după sfârșitul codului `marcaj`, dar tot în interiorul buclei, adaugă următoarea linie pentru a salva o referință la acest marcaj în lista noastră de marcaje `toate_marcajele`. Vom avea nevoie de această listă, mai târziu, într-un pas ulterior.
++ Imediat după sfârșitul codului `marker`, dar tot în interiorul buclei, adaugă următoarea linie pentru a salva o referință la acest marcaj în lista noastră de marcaje `all_markers`. Vom avea nevoie de această listă, mai târziu, într-un pas ulterior.
 
 ```JavaScript
-toate_marcajele.push(marcaj);
+all_markers.push(marker);
 ```
 
 + Salvează-ți codul și reîncarcă pagina. Testează dacă toate marcajele tale apar pe hartă. Dacă acestea nu sunt afișate corect, poate ar trebui să te uiți în **consola** JavaScript pentru a vedea dacă există mesaje de eroare pe care trebuie să le rezolvi?
