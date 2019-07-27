@@ -1,20 +1,20 @@
-## Create the map
+## Creează harta
 
-If you have already completed the [Zombie apocalypse survival map](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"} project, you will notice that the first few steps of this project are very similar. **Make sure you start a fresh HTML file for this project rather than reusing your old code.** Otherwise you will get confused during the later stages.
+Dacă deja ai făcut proiectul [Harta de supraviețuire a apocalipsei zombi](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"}, vei observa că primii pași ai acestui proiect sunt foarte asemănători. **Asigură-te că ai deschis un fișier HTML nou pentru acest proiect, în loc să refolosești cod deja existent.** Altfel, s-ar putea să te încurci în etapele care vor urma.
 
-+ Create and save a file called `index.html`. You will need to use a text editor on your computer to do this rather than an online HTML editor.
++ Creează și salvează un fișier numit `index.html`. Va trebui să folosești un editor de text de pe calculator, în loc de un editor online de HTML.
 
 [[[generic-html-create-and-save]]]
 
-+ In the file, add tags to create a basic HTML page.
++ În acest fișier, adaugă etichete pentru a crea o pagina de bază HTML.
 
 [[[generic-html-basic-page]]]
 
-+ If you don't already have one, obtain a Google Maps Javascript API key. Make sure you add the code for using the key to your `index.html` file.
++ Dacă nu ai deja una, obține o cheie API Javascript de la Google Maps. Asigură-te că ai adăugat codul în fișierul tău `index.html` pentru a putea folosi cheia.
 
 [[[generic-api-google-maps-key]]]
 
-+ In the text editor, find the `<head>` tag in your code. On a blank line below this tag, add the following code to set up how large your map will be and what colour will be displayed if it does not load properly.
++ În editorul de text, găsește eticheta `<head>` din codul tău. Pe o linie nouă goală sub această etichetă, adaugă următorul cod pentru a seta cât de mare va fi harta ta și ce culoare va fi afișată dacă nu se încarcă corect.
 
 ```html
 <style>
@@ -29,18 +29,18 @@ If you have already completed the [Zombie apocalypse survival map](https://proje
 </style>
 ```
 
-+ Locate the `<body>` tag in your code. On a blank line below this tag, add the following code to create a `<div>` (an invisible box) where your map will eventually appear.
++ Localizează eticheta `<body>` din codul tău. Pe o nouă linie goală sub această etichetă, adaugă următorul cod pentru a crea `<div>` (o casetă invizibilă) unde harta ta va apărea, în cele din urmă.
 
 ```html
-My zombie map
+Harta mea zombi
 <div id="zombie_map"></div>
 ```
 
-+ Locate a town on [Google Maps](http://maps.google.com){:target="_blank"}, then right-click on the map and select **What's here?**. A box will pop up at the bottom of the page showing the latitude and longitude.
++ Localizează un oraș pe [Google Maps](http://maps.google.com){:target="_blank"}, apoi fă click dreapta pe hartă și selectează **Ce e aici?**. O casetă care indică latitudinea și longitudinea va apărea în partea de jos a paginii.
 
-![Finding latitude and longitude](images/whats-here.png)
+![Găsirea latitudinii și a longitudinii](images/whats-here.png)
 
-+ Immediately below the `<div>` code you just added, add the following code to create the map. Replace the `###` bits with the latitude and longitude values you just looked up for your town.
++ Imediat sub codul `<div>` pe care doar ce l-ai adăugat, insereaza următorul cod pentru a crea harta. Înlocuiește părțile `###` cu valorile latitudinii și longitudinii pe care doar ce le-ai aflat pentru orașul tău.
 
 ```html
 <script>
@@ -55,6 +55,6 @@ My zombie map
 </script>
 ```
 
-+ Save your code and refresh your internet browser. You should see a Google map with the town you chose at the centre of the map.
++ Salvează-ți codul și reîncarcă browser-ul. Ar trebui să vezi o hartă Google a orașului pe care l-ai ales în centrul hărții.
 
 ![Centered map](images/centered-map.png)
