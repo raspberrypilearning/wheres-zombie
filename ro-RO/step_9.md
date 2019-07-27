@@ -28,81 +28,81 @@ var distanta = google.maps.geometry.spherical.computeDistanceBetween(poz, toate_
 
 Imaginea de mai jos arată un exemplu de calcul. Cât de departe este jucătorul față de marcajul spitalului?
 
-![What we are calculating](images/what-we-are-calculating.png)
+![Ce calculăm](images/what-we-are-calculating.png)
 
-+ Add an `if` statement immediately below to check whether the distance between the player and the marker we are currently examining is less than the tolerance. It should look like this:
++ Adaugă o instrucțiune `if` imediat sub pentru a verifica dacă distanța dintre jucător și marcajul curent pe care îl examinăm este mai mică decât toleranța. Ar trebui să arate așa:
 
 ```javascript
-if( distance < tolerance ){
-    alert("Found it!")
+if( distanta < toleranta ){
+    alert("L-ai gasit!")
 }
 ```
 
-At the moment we are not sure what it is the player has found.
+Momentan, nu suntem siguri ce a găsit jucătorul.
 
-+ Remove the line saying "Found it!", and instead get the name of the icon the player is close to.
-
-```javascript
-var what_is_it = all_markers[i].getIcon();
-```
-
-+ Remove the `.png` part from the name of the icon. For example, if the icon's name is `hospital.png`, we just want to say "hospital".
++ Elimină linia care spune „L-ai gasit!”, iar în locul ei obține numele pictogramei de care jucătorul este aproape.
 
 ```javascript
-what_is_it = what_is_it.replace(".png", "");
-
+var ce_este = toate_marcajele[i].getIcon();
 ```
 
-+ Create an alert to tell the player what they have found. In this case, the alert will say `Found the hospital`:
++ Elimină partea `.png` din numele pictogramei. De exemplu, dacă numele pictogramei este `hospital.png `, vrem doar să spunem „hospital”.
 
 ```javascript
-alert("Found the " + what_is_it );
+ce_este = ce_este.replace(".png", "");
+
 ```
 
-+ Remove the `all_markers[i]` marker from the map, so that the game does not keep telling the player they found the same thing.
++ Creează o alertă pentru a spune jucătorului ce a găsit. În acest caz, alerta va spune `Ai gasit hospital`:
 
-\--- hints \--- \--- hint \--- Remember that we removed a marker from the map before, when we stopped the attack of the smileys. \--- /hint \---
+```javascript
+alert("Ai gasit " + ce_este );
+```
 
-\--- hint \--- To remove a marker from the map, set the map of the marker to `null`, which means no map in this case. \--- /hint \---
++ Elimină `toate_marcajele[i]` de pe hartă, astfel încât jocul să nu îi spună jucătorului că a găsit același lucru în continuu.
 
-\--- hint \--- You will need to use the `.setMap()` method on the marker. \--- /hint \---
+\--- hints \--- \--- hint \--- Amintește-ți că am scos un marcaj din harta înainte, când am oprit atacul emoji-urilor zâmbărețe. \--- /hint \---
+
+\--- hint \--- Pentru a elimina un marcaj de pe hartă, setează harta marcajului pe `null`, ceea ce înseamnă că nu există o hartă în acest caz. \--- /hint \---
+
+\--- hint \--- Va trebui să folosești metoda `.setMap()` asupra marcajului. \--- /hint \---
 
 \--- /hints \---
 
-+ Finally, let's add a score. Once again, locate the line `var zombie_map;`, and add another line of code below it to create a variable called `score`.
++ În final, să adăugăm un scor. Încă o dată, localizează linia `var harta_zombi;` și adăugă o altă linie de cod sub ea pentru a crea o variabilă numită `scor`.
 
-If the player found a zombie, in my game they don't get any points. Perhaps if you are feeling particularly mean you could give your player minus points in your game! If they found a hospital or a weapon store they get 10 points.
+Dacă jucătorul a găsit un zombi, în jocul meu nu primesc puncte. Poate că dacă te simți îndrăzneț, ai putea scădea jucătorului tău punctele! Dacă au găsit un spital sau un magazin de arme, primesc 10 puncte.
 
-+ Here is some pseudo code for the code we want to add. Translate it into real code and add it to your program.
++ Iată niște linii în pseudo-cod pentru codul pe care vrem să îl adăugăm. Tradu-l în cod real și adăugă-l în programul tău.
 
 ```html
-IF what they found isn't a zombie
-    score + 10 points
-    ALERT Your score is + score
+DACĂ ceea ce au găsit nu este zombi
+    scor + 10 puncte
+    ALERTĂ Scorul tau este + scor
 ```
 
-Add your code here:
+Adaugă codul tău aici:
 
-![Add a score](images/add-score.png)
+![Adaugă un scor](images/add-score.png)
 
 \--- hints \---
 
-\--- hint \--- We already worked out what they found and stored it in the variable `what_is_it`. Use this to create a condition which says that the contents of this variable is not equal to (`!=`) zombie. \--- /hint \----
+\--- hint \--- Am elaborat deja ce au găsit și le-am stocat în variabila `ce_este`. Folosește acest lucru pentru a crea o condiție care spune că conținutul acestei variabile nu este egal (`!=`) cu un zombi. \--- /hint \----
 
-\--- hint \--- You can add on points to a variable like this:
+\--- hint \--- Poți adăuga puncte la o variabilă în felul următor:
 
 ```javascript
-score += 10
+scor += 10
 ```
 
-This means "`score` is whatever it was before plus 10". \--- /hint \----
+Aceasta înseamnă „`scor`-ului precedent i se adaugă 10". \--- /hint \----
 
-\--- hint \--- Solution:
+\--- hint \--- Soluție:
 
 ```javascript
-if( what_is_it != "zombie"){
-    score += 10;
-    alert("Your score is " + score);
+if( ce_este != "zombie"){
+    scor += 10;
+    alert("Scorul tau este " + scor);
 }
 ```
 
@@ -110,4 +110,4 @@ if( what_is_it != "zombie"){
 
 \--- /hints \---
 
-+ Now it's time to test out your game! Have a read through the safety tips in the next step before you do any testing.
++ Acum este timpul să îți testezi jocul! Te rugăm să citești sfaturile de siguranță în pasul următor înainte de a face orice testare.
