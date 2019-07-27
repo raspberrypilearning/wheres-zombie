@@ -1,17 +1,17 @@
-## What you will need
+## De ce vei avea nevoie
 
 ### Hardware
 
-+ A computer with an internet connection
-+ A smartphone with GPS
++ Un computer cu o conexiune la internet
++ Un smartphone cu GPS
 
 ### Software
 
-+ Internet browser (e.g. Google Chrome or Safari)
-+ Text editor (e.g. Notepad or Atom)
-+ If you want to play your game outside, you will need a place to host your web page on the internet. One way to do this is to host your page for free on GitHub.
++ Internet Browser (de ex. Google Chrome sau Safari)
++ Editor de text (de ex. Notepad sau Atom)
++ Dacă vrei să joci jocul afară, vei avea nevoie de un loc în care sa găzduiești pagina web pe internet. O modalitate de a face acest lucru este să îți găzduiești pagina gratuit pe GitHub.
 
-### Additional resources
+### Resurse suplimentare
 
-+ Emoji images: you can either make your own or use ones from [Wikimedia commons](https://commons.wikimedia.org/wiki/Emoji){:target="_blank"}
-+ A Google account (please [check whether you are old enough to create an account](https://support.google.com/accounts/answer/1350409?hl=en){:target="_blank"} before beginning this project)
++ Imagini Emoji: poți să îți faci propriile emoji sau să le folosești pe cele din [Wikimedia commons](https://commons.wikimedia.org/wiki/Emoji){:target="_blank"}
++ Un cont de Google (te rog [verifică dacă ai vârsta necesară pentru a-ți putea crea un cont](https://support.google.com/accounts/answer/1350409?hl=en){:target="_blank"} înainte de a începe acest proiect)
