@@ -1,6 +1,6 @@
-## Create the markers
+## Creează marcajele
 
-+ Below the line `var zombie_map;`, add another line to create a variable called `all_markers`. Set it equal to `[]`, which is a blank array. This will eventually store a reference to each of the markers we are about to create.
++ Sub linia `var harta_zombi;`, adaugă o altă linie pentru a crea o variabilă numită `toate_markerele`. Seteaz-o egală cu `[]`, care reprezintă un tablou gol. This will eventually store a reference to each of the markers we are about to create.
 
 + Position your cursor inside the `initMap()` function, just below the code for creating the zombie map.
 
