@@ -5,17 +5,17 @@ Să afișăm poziția curentă a jucătorului pe hartă.
 + În interiorul funcției `initHarta()`, după ce creezi harta, adaugă niște cod pentru a utiliza geolocalizarea HTML5 pentru a găsi poziția curentă a jucătorului:
 
 ```javascript
-if (navigator.geolocation) {
-    navigator.geolocation.watchPosition (seteaza_pozitia_mea);
+if(navigator.geolocation) {
+    navigator.geolocation.watchPosition(set_my_position);
 }
 else {
-    alertă („Geolocalizarea nu funcționează în browserul tău”);
+    alert("Geolocalizarea nu functioneaza in browser-ul tau");
 }
 ```
 
-Acest cod verifică dacă locația jucătorului poate fi găsită folosind browserul web. Dacă nu poate fi găsită, va apărea o fereastră pop-up cu un mesaj. Dacă poate fi găsită, setăm codul pentru `watchPosition`. Acest cod va monitoriza constant poziția dispozitivului și va apela funcția `seteaza_pozitia_mea` ori de câte ori poziția dispozitivului se schimbă.
+Acest cod verifică dacă locația jucătorului poate fi găsită folosind browserul web. Dacă nu poate fi găsită, va apărea o fereastră pop-up cu un mesaj. Dacă poate fi găsită, setăm codul pentru `watchPosition`. Acest cod va monitoriza constant poziția dispozitivului și va apela funcția `set_my_position` ori de câte ori poziția dispozitivului se schimbă.
 
-+ Pentru a putea afișa poziția jucătorului pe hartă, trebuie să scriem funcția `seteaza_pozitia_mea`. După paranteza de închidere a funcției `initHarta()`, creează o nouă funcție numită `seteaza_pozitia_mea`.
++ Pentru a putea afișa poziția jucătorului pe hartă, trebuie să scriem funcția `set_my_position`. După paranteza de închidere a funcției `initHarta()`, creează o nouă funcție numită `seteaza_pozitia_mea`.
 
 [[[generic-javascript-create-a-function]]]
 
