@@ -1,64 +1,64 @@
 ## Creează marcajele
 
-+ Sub linia `var harta_zombi;`, adaugă o altă linie pentru a crea o variabilă numită `toate_markerele`. Seteaz-o egală cu `[]`, care reprezintă un tablou gol. This will eventually store a reference to each of the markers we are about to create.
++ Sub linia `var harta_zombi;`, adaugă o altă linie pentru a crea o variabilă numită `toate_markerele`. Seteaz-o egală cu `[]`, care reprezintă un tablou gol. Acest lucru va stoca, în final, o referință la fiecare dintre marcajele pe care suntem pe cale sa le creăm.
 
-+ Position your cursor inside the `initMap()` function, just below the code for creating the zombie map.
++ Poziționează cursorul în interiorul funcției `initHarta()`, chiar sub codul pentru crearea hărții zombi.
 
 ![Add marker code here](images/add-marker-code.png)
 
-+ Create a for loop that will run once for every marker in the `markers` array we created in the previous step.
++ Creează o buclă for care va rula o dată pentru fiecare marcaj din tabloul `marcaje` pe care l-am creat în pasul anterior.
 
 [[[generic-javascript-for-loop-array]]]
 
-Inside the for loop, the line of marker data we are currently looking at is `markers[i]` - the loop will add `1` to the variable `i` each time it runs, so we will be looking at each line of data, one by one.
+În interiorul buclei for, linia de date a marcajului la care ne uităm în momentul de față este `marcaje[i]` - bucla va adăuga `1` la variabila `i` de fiecare dată când rulează, așa că ne vom uita la fiecare linie de date, una câte una.
 
-The first line of data looks like this:
+Prima linie de date arată astfel:
 
 ```html
 51.90769026213801 -2.068905830383301 zombie.png
 ```
 
-We want to end up with this data as an array, so we will need to split it up just like we did in the previous step.
+Vrem să obținem aceste date într-un tablou, așa că va trebui să le împărțim la fel ca în pasul anterior.
 
-+ Add all the other lines of code in this step inside your for loop. First, `trim()` any unwanted spaces from the beginning and end of the data, like so:
++ Adaugă toate celelalte linii de cod în acest pas în bucla for. Mai întâi, cu ajutorul funcției `trim()` elimină orice spații nedorite de la începutul și sfârșitul datelor, făcând în felul următor:
 
 ```JavaScript
-var marker_data = markers[i].trim();
+var date_marcaje = marcaje[i].trim();
 ```
 
-+ Now split the string up just like we did before, but this time split wherever there is a space:
++ Acum, împarte șirul la fel ca și înainte, dar de data aceasta împarte oriunde există un spațiu:
 
 ```JavaScript
-marker_data = marker_data.split(" ");
+date_marcaje = date_marcaje.split(" ");
 ```
 
-Doing so will give you an array called `marker_data`, which contains three values. In order, these are: the latitude, the longitude, and the marker image file.
+Dacă faci așa, vei obține un tablou numit `date_marcaje`, care conține trei valori. În ordine, acestea sunt: latitudinea, longitudinea și fișierul de imagine al marcajului.
 
-+ Create variables to name each of these values. We've done the first for you:
++ Creează variabile pentru a denumi fiecare dintre aceste valori. Am numit prima variabila pentru tine:
 
 ```JavaScript
-var latitude = marker_data[0];
-var longitude = ?;
+var latitudine = date_marcaje[0];
+var longitudine = ?;
 var emoji = ?;
 ```
 
-+ To be able to add the marker at the correct position, you need to create a `LatLng` object.
++ Pentru a putea adăuga marcajul la poziția corectă, trebuie să creezi un obiect `LatLng`.
 
 ```JavaScript
-var marker_position = new google.maps.LatLng(###, ###);
+var pozitie_marcaje = new google.maps.LatLng(###, ###);
 ```
 
-Add this line of code immediately below the previous line, replacing `###` with the latitude and longitude variables.
+Adaugă această linie de cod imediat sub linia anterioară, înlocuind `###` cu variabilele de latitudine și longitudine.
 
-+ Still inside the loop, write some code to create a marker at the `marker_position`, with the `icon:` set to the emoji variable.
++ Tot în interiorul buclei, scrie un cod pentru a crea un marcaj la poziția `pozitie_marcaje`, cu pictograma `icon:` setată cu variabila emoji.
 
 [[[generic-api-google-maps-marker]]]
 
-\--- hints \--- \--- hint \--- Instead of putting in a fixed latitude/longitude like in the example, use the `marker_position` variable to tell the marker where it should be placed. \--- /hint \---
+\--- hints \--- \--- hint \--- În loc să pui o latitudine/longitudine fixă ca în exemplu, folosește variabila `pozitie_marcaje` pentru a spune marcajului unde trebuie plasat. \--- /hint \---
 
-\--- hint \--- Check that the name of the map (in the example `mymap`) is the same as the name of the map you have created. \--- /hint \---
+\--- hint \--- Verifică dacă numele hărții (în exemplul `hartamea`) este identic cu numele hărții pe care ai creat-o. \--- /hint \---
 
-\--- hint \--- You can add an icon by adding another line within the marker to specify `icon: "nameofpicture.png"`. Don't forget to put a comma at the end of the `map` line to indicate that there is another marker property you would like to set. \--- /hint \---
+\--- hint \--- Poți adăuga o pictogramă adăugând o altă linie în marcaj pentru a specifica `icon: "numeleimaginii.png"`. Don't forget to put a comma at the end of the `map` line to indicate that there is another marker property you would like to set. \--- /hint \---
 
 \--- hint \--- If you specify a fixed file name like `nameofpicture.png`, then the marker icon will always be the same. We created a variable earlier which contains the picture name: put the variable `emoji` as the specified icon to use the right emoji from the data.
 
