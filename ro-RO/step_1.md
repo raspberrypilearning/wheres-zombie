@@ -1,19 +1,19 @@
-## Introduction
+## Introducere
 
-Use the GPS on your phone to make an outdoor zombie apocalypse game you can play with your friends. Collect the supplies to power up, but avoid the zombies!
+Folosește GPS-ul de pe telefonul tău pentru a crea un joc cu o apocalipsă zombi, pe care îl poți juca în aer liber alături de prietenii tăi. Adună proviziile pentru a căpăta energie, dar evită zombii!
 
-This resource expects you to have already mapped out the location of your goodies and zombies using the [Zombie apocalypse map](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"} resource.
+Această resursă presupune ca deja să fi localizat proviziile și zombii folosind resursa [Harta apocalipsei zombi](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"}.
 
-### What you will make
+### Ce vei face
 
-You will make a game that you can play outside using your mobile phone's GPS capabilities. Find the power-ups and avoid the zombies!
+Vei face un joc pe care îl vei putea juca afară folosind funcțiile GPS ale telefonului tău mobil. Găsește proviziile și evită zombii!
 
-![Example game](images/example-game.png)
+![Exemplu de joc](images/example-game.png)
 
-### What you will learn
+### Ce vei învăța
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
+Acest proiect acoperă elemente din următoarele componente ale [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
 
-+ [Design basic 2D and 3D assets](https://curriculum.raspberrypi.org/design/creator/){:target="_blank"}
-+ [Apply abstraction and decomposition to solve more complex problems](https://curriculum.raspberrypi.org/programming/developer/){:target="_blank"}
-+ [Engage and share with the digital making community](https://curriculum.raspberrypi.org/community-and-sharing/creator/){:target="_blank"}
++ [Bazele proiectării obiectelor 2D și 3D](https://curriculum.raspberrypi.org/design/creator/)
++ [Aplicarea abstractizării și descompunerii pentru a rezolva problemele mai complexe](https://curriculum.raspberrypi.org/programming/developer/){:target="_blank"}
++ [Implicarea și comunicarea în cadrul comunității de creare digitală](https://curriculum.raspberrypi.org/community-and-sharing/creator/){:target="_blank"}
