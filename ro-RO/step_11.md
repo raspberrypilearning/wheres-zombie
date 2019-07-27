@@ -7,4 +7,4 @@ Iată câteva idei pe care le-ai putea explora pentru a-ți îmbunătăți jocul
 + Șterge la întâmplare un marcaj după o anumită perioadă de timp - poate spitalul a fost distrus sau zombii au găsit o parte din arme?
 + Adaugă un sistem de calcul al scorurilor mai sofisticat.
 + Dezvăluie doar unul dintre marcaje, dezvăluindu-l pe următorul ori de câte ori este atins primul, pentru un stil de joc în stilul „vânătoare de comori”.
-+ Replace all of the marker images with "?" icons—then you won't know until you get to a marker if you'll find a juicy weapon store or a den of zombies!
++ Înlocuiește toate imaginile marcajelor cu pictograme „?” — astfel că nu vei ști până când vei ajunge la un marcaj dacă vei găsi un magazin de arme sau o mulțime de zombi!
