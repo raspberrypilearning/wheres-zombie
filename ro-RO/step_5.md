@@ -4,7 +4,7 @@
 
 + Poziționează cursorul în interiorul funcției `initHarta()`, chiar sub codul pentru crearea hărții zombi.
 
-![Add marker code here](images/add-marker-code.png)
+![Adaugă codul marcajului aici](images/add-marker-code.png)
 
 + Creează o buclă for care va rula o dată pentru fiecare marcaj din tabloul `marcaje` pe care l-am creat în pasul anterior.
 
@@ -58,14 +58,14 @@ Adaugă această linie de cod imediat sub linia anterioară, înlocuind `###` cu
 
 \--- hint \--- Verifică dacă numele hărții (în exemplul `hartamea`) este identic cu numele hărții pe care ai creat-o. \--- /hint \---
 
-\--- hint \--- Poți adăuga o pictogramă adăugând o altă linie în marcaj pentru a specifica `icon: "numeleimaginii.png"`. Don't forget to put a comma at the end of the `map` line to indicate that there is another marker property you would like to set. \--- /hint \---
+\--- hint \--- Poți adăuga o pictogramă adăugând o altă linie în marcaj pentru a specifica `icon: "numeleimaginii.png"`. Nu uita să pui o virgulă la sfârșitul liniei `map` pentru a indica faptul că există o altă proprietate a marcajului pe care dorești să o setezi. \--- /hint \---
 
-\--- hint \--- If you specify a fixed file name like `nameofpicture.png`, then the marker icon will always be the same. We created a variable earlier which contains the picture name: put the variable `emoji` as the specified icon to use the right emoji from the data.
+\--- hint \--- Dacă specifici un nume fix pentru un fișier, precum `numeleimaginii.png`, atunci pictograma marcajului va fi întotdeauna aceeași. Am creat mai devreme o variabilă care conține numele imaginii: pune variabila `emoji` ca pictogramă specificată pentru a utiliza emoji-ul potrivit din date.
 
 ```JavaScript
 var marker = new google.maps.Marker({
-  position: marker_position,
-  map: zombie_map,
+  position: pozitie_marcaje,
+  map: harta_zombi,
   icon: emoji
 });
 ```
@@ -74,12 +74,12 @@ var marker = new google.maps.Marker({
 
 \--- /hints \---
 
-+ Immediately after the end of the `marker` code, but still within the loop, add the following line to save a reference to this marker in our list of `all_markers`. We will need this list in a later step.
++ Imediat după sfârșitul codului `marcaj`, dar tot în interiorul buclei, adaugă următoarea linie pentru a salva o referință la acest marcaj în lista noastră de marcaje `toate_marcajele`. Vom avea nevoie de această listă, mai târziu, într-un pas ulterior.
 
 ```JavaScript
-all_markers.push(marker);
+toate_marcajele.push(marcaj);
 ```
 
-+ Save your code and refresh the page. Test that all of your markers show up on the map. If they do not show up properly, perhaps you could look in the JavaScript **console** to see if there are any error messages for you to resolve?
++ Salvează-ți codul și reîncarcă pagina. Testează dacă toate marcajele tale apar pe hartă. Dacă acestea nu sunt afișate corect, poate ar trebui să te uiți în **consola** JavaScript pentru a vedea dacă există mesaje de eroare pe care trebuie să le rezolvi?
 
 [[[generic-javascript-opening-console]]]
