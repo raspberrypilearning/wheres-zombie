@@ -1,8 +1,8 @@
 ## Creează marcajele
 
-+ Sub linia `var harta_zombi;`, adaugă o altă linie pentru a crea o variabilă numită `toate_markerele`. Seteaz-o egală cu `[]`, care reprezintă un tablou gol. Acest lucru va stoca, în final, o referință la fiecare dintre marcajele pe care suntem pe cale sa le creăm.
++ Sub linia `var zombie_map;`, adaugă o altă linie pentru a crea o variabilă numită `all_markers`. Seteaz-o egală cu `[]`, care reprezintă un tablou gol. Acest lucru va stoca, în final, o referință la fiecare dintre marcajele pe care suntem pe cale sa le creăm.
 
-+ Poziționează cursorul în interiorul funcției `initHarta()`, chiar sub codul pentru crearea hărții zombi.
++ Poziționează cursorul în interiorul funcției `initMap()`, chiar sub codul pentru crearea hărții zombi.
 
 ![Adaugă codul marcajului aici](images/add-marker-code.png)
 
@@ -10,7 +10,7 @@
 
 [[[generic-javascript-for-loop-array]]]
 
-În interiorul buclei for, linia de date a marcajului la care ne uităm în momentul de față este `marcaje[i]` - bucla va adăuga `1` la variabila `i` de fiecare dată când rulează, așa că ne vom uita la fiecare linie de date, una câte una.
+În interiorul buclei for, linia de date a marcajului la care ne uităm în momentul de față este `markers[i]` - bucla va adăuga `1` la variabila `i` de fiecare dată când rulează, așa că ne vom uita la fiecare linie de date, una câte una.
 
 Prima linie de date arată astfel:
 
