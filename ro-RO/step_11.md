@@ -1,10 +1,10 @@
-## Challenge: improve the game
+## Provocare: Îmbunătășeste jocul
 
-Here are some ideas you could explore to improve your zombie game:
+Iată câteva idei pe care le-ai putea explora pentru a-ți îmbunătăți jocul cu zombi:
 
-+ Add descriptions to each of the markers you create, so the person has some background story about what they have found.
-+ Add markers that are randomly generated. For example, you could randomly generate zombies at different locations. You will want to restrict the possible latitudes and longitudes for these markers or you might be generating zombies on another continent - then somebody else would have to deal with them!
-+ Randomly delete a marker after a certain amount of time - perhaps the hospital got destroyed, or zombies found some of the weapons?
-+ Add a more sophisticated scoring system.
-+ Only reveal one of the markers at a time, revealing the next one whenever the first is reached, for a more 'treasure hunt' style of play.
++ Adaugă descrieri la fiecare dintre marcajele pe care le-ai creat, astfel încât jucătorul să aibă câteva informații despre ce tocmai a găsit.
++ Adaugă marcaje generate aleatoriu. De exemplu, poți genera în mod aleatoriu zombi în diferite locații. Vei dori să restricționezi latitudinile și longitudinile posibile pentru aceste marcaje, astfel că în caz contrar, poți genera zombi pe un alt continent - atunci altcineva ar trebui să se ocupe de ei!
++ Șterge la întâmplare un marcaj după o anumită perioadă de timp - poate spitalul a fost distrus sau zombii au găsit o parte din arme?
++ Adaugă un sistem de calcul al scorurilor mai sofisticat.
++ Dezvăluie doar unul dintre marcaje, dezvăluindu-l pe următorul ori de câte ori este atins primul, pentru un stil de joc în stilul „vânătoare de comori”.
 + Replace all of the marker images with "?" icons—then you won't know until you get to a marker if you'll find a juicy weapon store or a den of zombies!
