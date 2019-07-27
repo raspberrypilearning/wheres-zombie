@@ -57,4 +57,4 @@ Harta mea zombi
 
 + Salvează-ți codul și reîncarcă browser-ul. Ar trebui să vezi o hartă Google a orașului pe care l-ai ales în centrul hărții.
 
-![Centered map](images/centered-map.png)
+![Hartă centrată](images/centered-map.png)
