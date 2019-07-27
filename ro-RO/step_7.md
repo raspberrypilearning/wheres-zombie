@@ -1,45 +1,45 @@
-## Test the GPS
+## Testează GPS-ul
 
-You probably want to test whether your player icon moves around as you move around, and to do this you'll need to go outside. This could be pretty inconvenient while holding a computer, so let's upload the web page to the internet so that you can access it on your phone!
+Probabil dorești să testezi dacă pictograma jucătorului tău se mișcă în timp ce te deplasezi. Pentru a face acest lucru, va trebui să ieși afară. Acest lucru poate fi destul de incomod în timp ce țineți un computer, așa că hai să încărcăm pagina web pe internet, astfel încât să o poți accesa pe telefon!
 
-### Important safety notes
+### Indicații de siguranță importante
 
-Don't forget that when you upload things to the internet, anyone can see them. If you've centered the map on the latitude and longitude of your house, anyone who accesses the web page can see exactly where you live. It is safer to set up your zombie map in a communal area such as a park or a town centre so that you are not giving away your personal data.
+Nu uita că atunci când încărci lucrurile pe internet, oricine le poate vedea. Dacă ai centrat harta pe latitudinea și longitudinea casei tale, oricine accesează pagina web poate vedea exact unde locuiești. Este mai sigur să îți configurezi harta zombie într-o zonă comună, cum ar fi un parc sau centrului orașului, astfel încât să nu îți dai datele tale personale.
 
-For the GPS to work, you will need to enable the location services on your phone. Be aware that this means that your phone will track your exact position. It is never a good idea to post your exact location in public on the internet, so to be safe, disable the location services again after you have played the zombie game to make sure no other apps can use your location data. Your location will only be used by the zombie game in the web page you have created—you know exactly what this code does, because you wrote it!
+Pentru ca GPS-ul să funcționeze, va trebui să activezi serviciile de locație de pe telefon. Fii conștient că acest lucru înseamnă că telefonul tau îți va urmări poziția exactă. Nu este niciodată o idee bună să postezi locația ta exactă în public pe internet, așa că pentru a fi în siguranță, dezactivează din nou serviciile de locație după ce ai jucat jocul cu zombi, pentru a vă asigura că nici o altă aplicație nu iți poate folosi datele locației. Locația ta va fi utilizată doar de jocul zombi în pagina web creată — știi exact ce face acest cod, pentru că tu l-ai scris!
 
-### Upload your code
+### Încarcă-ți codul
 
-You can upload your zombie game onto any service that offers web hosting. You may already have some hosting available to you, in which case feel free to use that. We chose to use [GitHub Pages](https://pages.github.com/){:target="_blank"} because it is a trustworthy service and easy to use. To get started with it, follow these steps:
+Poți încărca jocul cu zombie pe orice serviciu care oferă găzduire web. Dacă ai deja vreun serviciu disponibil pentru tine, în acest caz, nu ezita să îl folosești. Am ales să folosim [GitHub Pages](https://pages.github.com/){:target="_blank"} deoarece este un serviciu de încredere și ușor de utilizat. Pentru a începe, urmează acești pași:
 
-+ Sign up for a [GitHub account](https://github.com/join){:target="_blank"}
++ Înscrie-te pentru un [cont GitHub](https://github.com/join){:target="_blank"}
 
-+ Visit the [instructions page](https://pages.github.com/){:target="_blank"}, and click on **Project site** and **Start from scratch**
++ Accesează [pagina cu instrucțiuni](https://pages.github.com/){:target="_blank"} și dă click pe **Project site** și **Start from scratch**
 
 ![Github pages](images/github-pages.png)
 
-+ Follow the instructions to create an index file as described, but instead of typing `<h1>Hello</h1>`, paste in the code from your `index.html` file before committing it
++ Urmează instrucțiunile pentru a crea un fișier index așa cum este descris, dar în loc să tastezi `<h1>Hello</h1>`, lipește codul din fișierul `index.html` înainte de comiterea acestuia
 
-+ You will also need to click on the **Upload files** button and upload the emoji files you are using
++ De asemenea, va trebui să dai click pe butonul **Upload files** și să încarci fișierele emoji pe care le utilizezi
 
-+ Finally, follow Step 4 on the instructions page to set up your master branch as a GitHub Pages site, and then view your page by typing the address into a browser.
++ În final, urmărește pasul 4 din pagina cu instrucțiuni pentru a configura ramura principală ca site GitHub Pages, apoi vizualizează-ți pagina tastând adresa într-un browser.
 
-## Restrict your API key
+## Restricționează-ți cheia API
 
-Now that you have put your code online, your Google Maps API key is visible to everyone. Someone could take it and use it without your permission. You can stop this from happening by restricting where it can be used, so that it can only be used on your website.
+După ce ai pus codul online, cheia ta API Google Maps este vizibilă pentru toată lumea. Cineva ar putea să o ia și să o folosească fără permisiunea ta. Poți împedica acest lucru să se întâmple, restricționând unde poate fi utilizat, astfel încât să poată fi utilizat doar pe site-ul tău web.
 
-+ Head back over to the [Google APIs console](https://console.developers.google.com/flows/enableapi?apiid=picker&credential=client_key){:target="_blank"} and click on **Select a project** at the top left of the page.
++ Întoarce-te la [Google APIs console](https://console.developers.google.com/flows/enableapi?apiid=picker&credential=client_key){:target="_ blank"} și dă click pe **Select a project** în stânga sus a paginii.
 
-![Select a project](images/select-a-project.png)
+![Selectează un proiect](images/select-a-project.png)
 
-+ Select the project you made when you set up your API key. This might still be called **My project** if you didn't change its name.
++ Selectează proiectul pe care l-ai făcut când ai configurat cheia API. Acest lucru ar putea fi încă numit **My project** dacă nu i-ai schimbat numele.
 
-+ Click on **Credentials** on the left, then click on your API key.
++ Dă click pe **Credentials** din stânga, apoi dă click pe cheia API.
 
-![Select a project](images/credentials.png)
+![Selectează un proiect](images/credentials.png)
 
-+ Under **Key restriction**, select **HTTP referrers** and in the box, add the base URL of your website, with a `*` at each end. For example, my code was hosted at `http://lawsie.github.io/`, so I put `*lawsie.github.io/*`. Click **Save**.
++ Sub **Key restriction**, selectează **HTTP referrers** și în casetă, adaugă adresa URL de bază a site-ului tău web, cu un `*` la fiecare capăt. De exemplu, codul meu a fost găzduit la `http://lawsie.github.io/`, așa că am pus `*lawsie.github.io/*`. Dă click pe **Save**.
 
-![Key restriction](images/key-restriction.png)
+![Restricție cheie](images/key-restriction.png)
 
-+ Your key should now only work on your website, and not anywhere else. Note that if you now try to look at the map on your computer, it will not work because the request is not coming from your website. You might want to create an extra API key that is unrestricted, and ONLY use that key on your private computer for testing.
++ Cheia ta ar trebui să funcționeze acum doar pe site-ul tău web, și nu în altă parte. Reține că, dacă încerci acum să privești harta de pe computer, aceasta nu va funcționa deoarece solicitarea nu vine de pe site-ul tău web. S-ar putea să dorești să creezi o cheie API suplimentară care nu este restricționată și să utilizezi NUMAI acea cheie de pe computerul tău privat pentru testare.
