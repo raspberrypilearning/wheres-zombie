@@ -23,18 +23,18 @@ Acest cod verifică dacă locația jucătorului poate fi găsită folosind brows
 
 `function seteaza_pozitia_mea(pozitie){`
 
-+ The latitude can be found within the function as `position.coords.latitude`, and the longitude as `position.coords.longitude`. Following the same process as you did in the previous step, create a LatLng object called `pos` inside the `set_my_position` function. The object should contain the latitude and longitude values.
++ Latitudinea poate fi găsită în funcția `pozitie.coords.latitude` și longitudinea în `pozitie.coords.longitude`. Urmând același proces ca și în pasul precedent, creează un obiect LatLng numit `poz` în interiorul funcției `seteaza_pozitia_mea`. Obiectul trebuie să conțină valorile latitudinii și longitudinii.
 
 ```JavaScript
-var pos = new google.maps.LatLng(###, ###);
+var poz = new google.maps.LatLng(###, ###);
 ```
 
-+ Still inside the function, create a marker which is situated at the LatLng object's position. You can do this the same way you created markers in the previous step. However, you should choose a different icon for this marker. we chose to represent the player as a smiley face, but you can choose any emoji you like. Don't forget to copy and paste the emoji image file you want to use into the same folder as your `index.html` code.
++ Tot în interiorul funcției, creează un marcaj care se află la poziția obiectului LatLng. Poți face acest lucru la fel cum ai creat marcajele în pasul anterior. Cu toate acestea, ar trebui să alegi o pictogramă diferită pentru acest marcaj. Am ales să reprezentăm jucătorul cu un chip zâmbăreț, dar poți alege orice emoji care îți place. Nu uita să copiezi și să lipești fișierul cu imaginea emoji pe care dorești să o utilizezi în același folder în care se află codul `index.html`.
 
-![Player emoji](images/player.png)
+![Jucător emoji](images/player.png)
 
-+ Save your code and refresh the internet browser. If a message pops up asking whether the browser can use your location data, press **Allow**. You should see your player emoji appear wherever you currently are.
++ Salvează-ți codul și reîncarcă-ți browser-ul. Dacă apare un mesaj care te întreabă dacă browser-ul îți poate folosi datele de locație, apasă **Permite**. Ar trebui să vezi emoji-ul jucătorului tău în locul în care te afli.
 
-![Where you are on the map](images/location-map.png)
+![Unde te afli pe hartă](images/location-map.png)
 
-+ You might want to adjust the `zoom` value in your map at this stage if it is a little too far out to see the locations of the icons clearly. Using a larger value will zoom in on the map.
++ Poate dorești să reglezi valorea `zoom` de pe harta ta în acest moment, dacă este setat prea departe pentru ca locațiile pictogramelor sa se poată vedea clar. Utilizarea unei valori mai mari ajută la mărirea vizualizării pe hartă.
