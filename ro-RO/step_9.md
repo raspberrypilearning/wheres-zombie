@@ -1,10 +1,10 @@
-## Find the items
+## Găsește obiectele
 
-Now we need to make the game work! As the player moves around, we will check whether theey have found an item. To find an item, they have to go to a real-life location that is considered close enough to the virtual item's location.
+Acum trebuie să facem jocul să funcționeze! Pe măsură ce jucătorul se mișcă, vom verifica dacă acesta a găsit un obiect. Pentru a găsi un obiect, trebuie să meargă într-o locație din viața reală care este considerată suficient de aproape de locația virtuală a obiectului.
 
-+ Locate the line `var zombie_map;` and, below it, add a new variable called `tolerance`. This variable will determine how close the player will have to be to the item marker's location (in metres) to find it. You can choose how close this is - the smaller the number of metres, the closer the player will have to get to the exact location to find the item. We chose a tolerance of 10.
++ Localizează linia `var harta_zombi;`, iar sub aceasta adaugă o nouă variabilă numită `toleranta`. Această variabilă va determina cât de aproape va trebui să fie jucătorul de locația marcajului pentru obiectul respectiv (în metri) pentru a-l găsi. Poți alege cât de aproape este acest obiect - cu cât numărul de metri este mai mic, cu atât mai aproape de locația exactă jucătorul va trebui să ajungă pentru a găsi obiectul. Am ales o toleranță de 10.
 
-To be able to calculate the distance between two points on a map, we need to use some of Google's technical wizardry from their geometry library. Locate the code near the bottom of the page which tells the map your API key:
+Pentru a putea calcula distanța dintre două puncte de pe o hartă, trebuie să folosim o parte din vrăjitoriile tehnice ale Google din biblioteca lor de geometrie. Găsește codul în partea de jos a paginii care ii îndică hărții cheia ta API:
 
 ```html
 <script async defer
@@ -12,21 +12,21 @@ src="https://maps.googleapis.com/maps/api/js?key=A1b2c3d4e5f6g7h8i9j10k11&callba
 </script>
 ```
 
-+ In the line of code above, immediately after `initMap`, but before the ending `"`, add `&libraries=geometry`. Be careful to not add any spaces.
++ În linia de cod de mai sus, imediat după `initHarta`, dar înainte de încheierea `"`, adaugă `&libraries=geometry`. Ai grijă să nu adăugi spații.
 
-+ Now locate your `set_my_position()` function, and position your cursor immediately below the line `old_position = marker;`.
++ Acum localizează funcția `seteaza_pozitia_mea()` și poziționează cursorul imediat sub linia `pozitie_veche = marcaj;`.
 
-+ Create a for loop which will loop through the `all_markers` array.
++ Creează o buclă care va trece prin tabloul `toate_marcajele`.
 
 [[[generic-javascript-for-loop-array]]]
 
-+ Inside your loop, use the following code to calculate the distance between the current position (`pos`) and the marker we are currently examining:
++ În interiorul buclei, utilizează următorul cod pentru a calcula distanța dintre poziția curentă (`poz`) și marcajul pe care îl examinăm în momentul de față:
 
 ```javascript
-var distance = google.maps.geometry.spherical.computeDistanceBetween(pos, all_markers[i].getPosition());
+var distanta = google.maps.geometry.spherical.computeDistanceBetween(poz, toate_marcajele[i].getPosition());
 ```
 
-The image below shows an example of one of the calculations. How far is it between the player and the hospital marker?
+Imaginea de mai jos arată un exemplu de calcul. Cât de departe este jucătorul față de marcajul spitalului?
 
 ![What we are calculating](images/what-we-are-calculating.png)
 
