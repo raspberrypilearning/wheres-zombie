@@ -28,7 +28,7 @@ Poți încărca jocul cu zombie pe orice serviciu care oferă găzduire web. Dac
 
 După ce ai pus codul online, cheia ta API Google Maps este vizibilă pentru toată lumea. Cineva ar putea să o ia și să o folosească fără permisiunea ta. Poți împedica acest lucru să se întâmple, restricționând unde poate fi utilizat, astfel încât să poată fi utilizat doar pe site-ul tău web.
 
-+ Întoarce-te la [Google APIs console](https://console.developers.google.com/flows/enableapi?apiid=picker&credential=client_key){:target="_ blank"} și dă click pe **Select a project** în stânga sus a paginii.
++ Întoarce-te la [Google APIs console](https://console.developers.google.com/flows/enableapi?apiid=picker&credential=client_key){:target="_blank"} și dă click pe **Select a project** în stânga sus a paginii.
 
 ![Selectează un proiect](images/select-a-project.png)
 
