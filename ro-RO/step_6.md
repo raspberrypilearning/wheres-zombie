@@ -1,27 +1,27 @@
-## Display your current position
+## Afișează poziția ta curentă
 
-Let's display the player's current position on the map.
+Să afișăm poziția curentă a jucătorului pe hartă.
 
-+ Inside the `initMap()` function, after you create the map, add some code to use HTML5 geolocation to find the player's current position:
++ În interiorul funcției `initHarta()`, după ce creezi harta, adaugă niște cod pentru a utiliza geolocalizarea HTML5 pentru a găsi poziția curentă a jucătorului:
 
 ```javascript
-if(navigator.geolocation) {
-    navigator.geolocation.watchPosition(set_my_position);
+if (navigator.geolocation) {
+    navigator.geolocation.watchPosition (seteaza_pozitia_mea);
 }
 else {
-    alert("Geolocation doesn't work in your browser");
+    alertă („Geolocalizarea nu funcționează în browserul tău”);
 }
 ```
 
-This code checks whether the player's location can be found using the web browser. If it cannot be found, a pop-up box will appear with a message. If it can, we set up code to `watchPosition`. This code will constantly monitor the position of the device, and will call the function `set_my_position` whenever the position of the device changes.
+Acest cod verifică dacă locația jucătorului poate fi găsită folosind browserul web. Dacă nu poate fi găsită, va apărea o fereastră pop-up cu un mesaj. Dacă poate fi găsită, setăm codul pentru `watchPosition`. Acest cod va monitoriza constant poziția dispozitivului și va apela funcția `seteaza_pozitia_mea` ori de câte ori poziția dispozitivului se schimbă.
 
-+ To be able to display the player's position on the map, we need to write the `set_my_position` function. After the closing bracket of the `initMap()` function, create a new function called `set_my_position`.
++ Pentru a putea afișa poziția jucătorului pe hartă, trebuie să scriem funcția `seteaza_pozitia_mea`. După paranteza de închidere a funcției `initHarta()`, creează o nouă funcție numită `seteaza_pozitia_mea`.
 
 [[[generic-javascript-create-a-function]]]
 
-+ This function needs the current latitude and longitude by the `watchPosition` comand we set up. Add an **argument** called `position` in the function's brackets so that this data will be automatically passed to it.
++ Această funcție are nevoie de latitudinea și longitudinea curente prin comanda `watchPosition` pe care am setat-o. Adaugă un **argument** numit `position` în parantezele funcției, astfel încât aceste date să fie transmise automat la aceasta.
 
-`function set_my_position(position){`
+`function seteaza_pozitia_mea(pozitie){`
 
 + The latitude can be found within the function as `position.coords.latitude`, and the longitude as `position.coords.longitude`. Following the same process as you did in the previous step, create a LatLng object called `pos` inside the `set_my_position` function. The object should contain the latitude and longitude values.
 
