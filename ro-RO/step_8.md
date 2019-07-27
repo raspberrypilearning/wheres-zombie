@@ -1,25 +1,25 @@
-## Attack of the smileys
+## Atacul emoji-urilor zâmbărețe
 
-When you tested your map on your phone, you probably thought you were being attacked by smileys rather than zombies! This is because the page creates a brand new marker every time the player moves, but doesn't remove the markers of their previous positions. Eventually this gets really confusing, because you can't tell where you are from where you've been!
+Când ai testat harta pe telefon, probabil ai crezut că ești atacat de emoji-uri zâmbărețe, mai degrabă decât de zombi! Acest lucru se datorează faptului că pagina creează un marker nou de fiecare dată când jucătorul se mișcă, dar nu elimină marcajele pozițiilor anterioare. În cele din urmă, acest lucru devine într-adevăr confuz, pentru că nu poți să-ți dai seama unde ești si unde ai fost!
 
-![Attack of the smileys](images/attack-smileys.png)
+![Atacul emoji-urilor zâmbărețe](images/attack-smileys.png)
 
-Continue editing the code on your computer. You can re-upload the code to GitHub if you want to test it outside.
+Continuă să editezi codul pe computer. Poți încărca din nou codul pe GitHub dacă dorești să îl testezi în exterior.
 
-+ Locate the line `var zombie_map;`, and below it add a new variable called `old_position`.
++ Localizează linia `var harta_zombi;`, iar sub aceasta adaugă o nouă variabilă numită `pozitie_veche`.
 
-+ Inside the `initMap()` function, create a marker called `old_position` at the same location you centered your map on when you created it. (It actually doesn't matter what location this marker is initialised at, as its location value will be overwritten almost immediately, but it does need to be initialised. We just used the map's central location because it was handy!)
++ În interiorul funcției `initHarta()`, creează un marcaj numit `pozitie_veche` în aceeași locație în care ai centrat harta când ai creat-o. (De fapt, nu contează la ce locație este inițializat acest marcaj, deoarece valoarea locației sale va fi suprascrisă aproape imediat, dar ea trebuie inițializată. Doar am folosit locația centrală a hărții, deoarece a fost la îndemână!)
 
-+ Locate your function `set_my_position()`. Add a line of code so that the **first** thing the function does is to remove the old position marker from the map. `null` is a special key word that in this case means "no map".
-
-```JavaScript
-old_position.setMap(null);
-```
-
-+ Add another line of code to the function `set_my_position()`, but this time it should be the **last** thing the function does. This saves the new position marker you just created as the `old_position` so that next time when we create a new marker we know where the previous one was.
++ Localizează funcția `seteaza_pozitia_mea()`. Adaugă o linie de cod pentru ca **primul lucru** pe care îl face funcția este să elimine vechea poziție a marcajului de pe hartă. `null` este un cuvânt cheie special care în acest caz înseamnă „fără hartă”.
 
 ```JavaScript
-old_position = marker;
+pozitie_veche.setMap(null);
 ```
 
-+ Save your code and upload it again to your web hosting service. Test the code out by walking around. You should see your player smiley move around, but this time there will be no trail of smileys, only one marker to show your current position. Phew!
++ Adaugă o altă linie de cod la funcția `seteaza_pozitia_mea()`, dar de data aceasta ar trebui să fie **ultimul** lucru pe care îl face funcția. Acesta salvează noua poziție a marcajului pe care tocmai l-ai creat ca `pozitie_veche`, astfel încât data viitoare când creăm un marcaj nou, știm unde era cel anterior.
+
+```JavaScript
+pozitie_veche = marcaj;
+```
+
++ Salvează-ți codul și încărcați-l din nou pe serviciul de găzduire web. Testează-ți codul mergând pe jos. Ar trebui să vezi emoji-ul zâmbăreț atașat jucătorului tău mișcându-se, dar de această dată nu va mai exista nicio urmă de zâmbete, ci un singur marcaj care să îți arate poziția actuală. Yay!
