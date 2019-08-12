@@ -1,0 +1,29 @@
+---
+title: Unde e Zombie?
+hero_image: images/banner.png
+description: Utilizează GPS-ul pe telefonul tău pentru a juca un joc cu zombi în aer liber. Adună proviziile, dar evita zombii!
+theme: yellow
+duration: 3
+listed: true
+ingredient: false
+copyedit: true
+curriculum: 2, design-1, programming-2, phys-comp-0, manufacture-0, community-1
+interests: games
+technologies: html-css-javascript
+hardware: ''
+software: html-css-javascript
+site_areas: projects
+version: 4
+last_tested: 2017-09-01
+steps:
+  - title: Introducere
+  - title: De ce vei avea nevoie
+  - title: Creează harta
+  - title: Obține datele marcajului
+  - title: Creează marcajele
+  - title: Afișează poziția ta curentă
+  - title: Testează GPS-ul
+  - title: Atacul emoji-urilor zâmbărețe
+  - title: Găsește obiectele
+  - title: Siguranța atunci când joci jocul
+  - title: "Provocare: Îmbunătățeste jocul"
