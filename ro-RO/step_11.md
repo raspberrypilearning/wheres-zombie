@@ -10,8 +10,11 @@ Iată câteva idei pe care le-ai putea explora pentru a-ți îmbunătăți jocul
 + Înlocuiește toate imaginile marcajelor cu pictograme „?” — astfel că nu vei ști până când vei ajunge la un marcaj dacă vei găsi un magazin de arme sau o mulțime de zombi!
 
 
-**Traducere realizată de comunitate**
+***
 
-Proiectul a fost tradus de **Cristina Draghici** și verificat de **Gelu Ungur**.
+Acest proiect a fost tradus de voluntarii:
 
-Traducătorii noștri voluntari ne ajută să oferim copiilor din întreaga lume șansa de a învăța să programeze. Ne poți ajuta să ajungem la mai mulți copii, ajutând la traducerea proiectelor noastre – află mai multe pe rpf.io/translators.
+Catalina Toderita
+Gelu Ungur
+
+Datorită voluntarilor, putem oferi oamenilor din întreaga lume șansa de a învăța în propria lor limbă. Ne poți ajuta să ajungem la mai multe persoane, ajutând la traducere ca și voluntar - mai multe informații la [rpf.io/translate](https://rpf.io/translate).

@@ -61,18 +61,11 @@ alert("Found the " + what_is_it );
 
 + Elimină `all_markers[i]` de pe hartă, astfel încât jocul să nu îi spună jucătorului că a găsit același lucru în continuu.
 
---- hints ---
- --- hint --- Amintește-ți că am scos un marcaj din harta înainte, când am oprit atacul emoji-urilor zâmbărețe.
---- /hint ---
+--- hints --- --- hint --- Amintește-ți că am scos un marcaj din harta înainte, când am oprit atacul emoji-urilor zâmbărețe. --- /hint ---
 
+--- hint --- Pentru a elimina un marcaj de pe hartă, setează harta marcajului pe `null`, ceea ce înseamnă că nu există o hartă în acest caz. --- /hint ---
 
---- hint --- Pentru a elimina un marcaj de pe hartă, setează harta marcajului pe `null`, ceea ce înseamnă că nu există o hartă în acest caz.
---- /hint ---
-
-
---- hint --- Va trebui să folosești metoda `.setMap()` asupra marcajului.
---- /hint ---
-
+--- hint --- Va trebui să folosești metoda `.setMap()` asupra marcajului. --- /hint ---
 
 --- /hints ---
 
@@ -94,10 +87,7 @@ Adaugă codul tău aici:
 
 --- hints ---
 
-
---- hint --- Am elaborat deja ce au găsit și le-am stocat în variabila `what_is_it`. Folosește acest lucru pentru a crea o condiție care spune că conținutul acestei variabile nu este egal (`!=`) cu un zombi.
---- /hint ---
--
+--- hint --- Am elaborat deja ce au găsit și le-am stocat în variabila `what_is_it`. Folosește acest lucru pentru a crea o condiție care spune că conținutul acestei variabile nu este egal (`!=`) cu un zombi. --- /hint ----
 
 --- hint --- Poți adăuga puncte la o variabilă în felul următor:
 
@@ -105,9 +95,7 @@ Adaugă codul tău aici:
 score += 10
 ```
 
-Aceasta înseamnă „adaugă +10 valorii precedente a variabilei `scor`".
---- /hint ---
--
+Aceasta înseamnă „adaugă +10 valorii precedente a variabilei `scor`". --- /hint ----
 
 --- hint --- Soluție:
 

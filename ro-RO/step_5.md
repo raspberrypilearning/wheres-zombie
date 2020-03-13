@@ -54,18 +54,11 @@ Adaugă această linie de cod imediat sub linia anterioară, înlocuind `###` cu
 
 [[[generic-api-google-maps-marker]]]
 
---- hints ---
- --- hint --- În loc să pui o latitudine/longitudine fixă ca în exemplu, folosește variabila `marker_position` pentru a spune marcajului unde trebuie plasat.
---- /hint ---
+--- hints --- --- hint --- În loc să pui o latitudine/longitudine fixă ca în exemplu, folosește variabila `marker_position` pentru a spune marcajului unde trebuie plasat. --- /hint ---
 
+--- hint --- Verifică dacă numele hărții (în exemplul `mymap`) este identic cu numele hărții pe care ai creat-o. --- /hint ---
 
---- hint --- Verifică dacă numele hărții (în exemplul `mymap`) este identic cu numele hărții pe care ai creat-o.
---- /hint ---
-
-
---- hint --- Poți adăuga o pictogramă adăugând o altă linie în marcaj pentru a specifica `icon: "numeleimaginii.png"`. Nu uita să pui o virgulă la sfârșitul liniei `map` pentru a indica faptul că există o altă proprietate a marcajului pe care dorești să o setezi.
---- /hint ---
-
+--- hint --- Poți adăuga o pictogramă adăugând o altă linie în marcaj pentru a specifica `icon: "numeleimaginii.png"`. Nu uita să pui o virgulă la sfârșitul liniei `map` pentru a indica faptul că există o altă proprietate a marcajului pe care dorești să o setezi. --- /hint ---
 
 --- hint --- Dacă specifici un nume fix pentru un fișier, precum `numeleimaginii.png`, atunci pictograma marcajului va fi întotdeauna aceeași. Am creat mai devreme o variabilă care conține numele imaginii: pune variabila `emoji` ca pictogramă specificată pentru a utiliza emoji-ul potrivit din date.
 

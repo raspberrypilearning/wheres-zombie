@@ -2,7 +2,7 @@
 
 Folosește GPS-ul de pe telefonul tău pentru a crea un joc cu o apocalipsă zombi, pe care îl poți juca în aer liber alături de prietenii tăi. Adună proviziile pentru a căpăta energie, dar evită zombii!
 
-Această resursă presupune ca deja să fi localizat proviziile și zombii folosind resursa [Harta apocalipsei zombi](https://projects.raspberrypi.org/ro-RO/projects/zombie-apocalypse-map){:target="_blank"}.
+Această resursă presupune ca deja să fi localizat proviziile și zombii folosind resursa [Harta apocalipsei zombi](https://projects.raspberrypi.org/el-GR/projects/zombie-apocalypse-map){:target="_blank"}.
 
 ### Ce vei face
 

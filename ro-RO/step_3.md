@@ -1,6 +1,6 @@
 ## Creează harta
 
-Dacă deja ai făcut proiectul [Harta de supraviețuire a apocalipsei zombi](https://projects.raspberrypi.org/ro-RO/projects/zombie-apocalypse-map){:target="_blank"}, vei observa că primii pași ai acestui proiect sunt foarte asemănători. **Asigură-te că ai deschis un fișier HTML nou pentru acest proiect, în loc să refolosești cod deja existent.** Altfel, s-ar putea să te încurci în etapele care vor urma.
+Dacă deja ai făcut proiectul [Harta de supraviețuire a apocalipsei zombi](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"}, vei observa că primii pași ai acestui proiect sunt foarte asemănători. **Asigură-te că ai deschis un fișier HTML nou pentru acest proiect, în loc să refolosești cod deja existent.** Altfel, s-ar putea să te încurci în etapele care vor urma.
 
 + Creează și salvează un fișier numit `index.html`. Va trebui să folosești un editor de text de pe calculator, în loc de un editor online de HTML.
 
