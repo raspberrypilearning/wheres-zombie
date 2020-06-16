@@ -25,6 +25,7 @@ src="https://maps.googleapis.com/maps/api/js?key=A1b2c3d4e5f6g7h8i9j10k11&callba
 ```javascript
 var distance = google.maps.geometry.spherical.computeDistanceBetween(pos, all_markers[i].getPosition());
 ```
+
 The image below shows an example of one of the calculations. How far is it between the player and the hospital marker?
 
 ![What we are calculating](images/what-we-are-calculating.png)
@@ -61,15 +62,21 @@ alert("Found the " + what_is_it );
 
 --- hints ---
 --- hint ---
+
 Remember that we removed a marker from the map before, when we stopped the attack of the smileys.
+
 --- /hint ---
 
 --- hint ---
+
 To remove a marker from the map, set the map of the marker to `null`, which means no map in this case.
+
 --- /hint ---
 
 --- hint ---
+
 You will need to use the `.setMap()` method on the marker.
+
 --- /hint ---
 
 --- /hints ---
@@ -85,6 +92,7 @@ IF what they found isn't a zombie
     score + 10 points
     ALERT Your score is + score
 ```
+
 Add your code here:
 
 ![Add a score](images/add-score.png)
@@ -93,26 +101,34 @@ Add your code here:
 --- hints ---
 
 --- hint ---
+
 We already worked out what they found and stored it in the variable `what_is_it`. Use this to create a condition which says that the contents of this variable is not equal to (`!=`) zombie.
+
 --- /hint ----
 
 --- hint ---
+
 You can add on points to a variable like this:
 
 ```javascript
 score += 10
 ```
+
 This means "`score` is whatever it was before plus 10".
+
 --- /hint ----
 
 --- hint ---
+
 Solution:
+
 ```javascript
 if( what_is_it != "zombie"){
     score += 10;
     alert("Your score is " + score);
 }
 ```
+
 --- /hint ----
 
 --- /hints ---
