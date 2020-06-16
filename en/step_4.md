@@ -34,6 +34,7 @@ We end up with an **array** of marker data which we will plot onto the map in th
 ---
 title: End result
 ---
+
 ```JavaScript
 var data = `51.90769026213801 -2.068905830383301 zombie.png
 51.91174087287536 -2.0681333541870117 hospital.png
@@ -43,4 +44,5 @@ var data = `51.90769026213801 -2.068905830383301 zombie.png
 51.90954352807475 -2.0659875869750977 weapons.png`;
 var markers = data.split("\n");
 ```
+
 --- /collapse ---
