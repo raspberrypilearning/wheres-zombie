@@ -61,11 +61,23 @@ alert("Found the " + what_is_it );
 
 + Remove the `all_markers[i]` marker from the map, so that the game does not keep telling the player they found the same thing.
 
-\--- hints \--- \--- hint \--- Remember that we removed a marker from the map before, when we stopped the attack of the smileys. \--- /hint \---
+\--- hints \--- \--- hint \---
 
-\--- hint \--- To remove a marker from the map, set the map of the marker to `null`, which means no map in this case. \--- /hint \---
+Remember that we removed a marker from the map before, when we stopped the attack of the smileys.
 
-\--- hint \--- You will need to use the `.setMap()` method on the marker. \--- /hint \---
+\--- /hint \---
+
+\--- hint \---
+
+To remove a marker from the map, set the map of the marker to `null`, which means no map in this case.
+
+\--- /hint \---
+
+\--- hint \---
+
+You will need to use the `.setMap()` method on the marker.
+
+\--- /hint \---
 
 \--- /hints \---
 
@@ -87,17 +99,27 @@ Add your code here:
 
 \--- hints \---
 
-\--- hint \--- We already worked out what they found and stored it in the variable `what_is_it`. Use this to create a condition which says that the contents of this variable is not equal to (`!=`) zombie. \--- /hint \----
+\--- hint \---
 
-\--- hint \--- You can add on points to a variable like this:
+We already worked out what they found and stored it in the variable `what_is_it`. Use this to create a condition which says that the contents of this variable is not equal to (`!=`) zombie.
+
+\--- /hint \----
+
+\--- hint \---
+
+You can add on points to a variable like this:
 
 ```javascript
 score += 10
 ```
 
-This means "`score` is whatever it was before plus 10". \--- /hint \----
+This means "`score` is whatever it was before plus 10".
 
-\--- hint \--- Solution:
+\--- /hint \----
+
+\--- hint \---
+
+Solution:
 
 ```javascript
 if( what_is_it != "zombie"){
