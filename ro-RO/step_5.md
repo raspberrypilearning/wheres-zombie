@@ -54,13 +54,27 @@ Adaugă această linie de cod imediat sub linia anterioară, înlocuind `###` cu
 
 [[[generic-api-google-maps-marker]]]
 
-\--- hints \--- \--- hint \--- În loc să pui o latitudine/longitudine fixă ca în exemplu, folosește variabila `marker_position` pentru a spune marcajului unde trebuie plasat. \--- /hint \---
+\--- hints \--- \--- hint \---
 
-\--- hint \--- Verifică dacă numele hărții (în exemplul `mymap`) este identic cu numele hărții pe care ai creat-o. \--- /hint \---
+Instead of putting in a fixed latitude/longitude like in the example, use the `marker_position` variable to tell the marker where it should be placed.
 
-\--- hint \--- Poți adăuga o pictogramă adăugând o altă linie în marcaj pentru a specifica `icon: "numeleimaginii.png"`. Nu uita să pui o virgulă la sfârșitul liniei `map` pentru a indica faptul că există o altă proprietate a marcajului pe care dorești să o setezi. \--- /hint \---
+\--- /hint \---
 
-\--- hint \--- Dacă specifici un nume fix pentru un fișier, precum `numeleimaginii.png`, atunci pictograma marcajului va fi întotdeauna aceeași. Am creat mai devreme o variabilă care conține numele imaginii: pune variabila `emoji` ca pictogramă specificată pentru a utiliza emoji-ul potrivit din date.
+\--- hint \---
+
+Check that the name of the map (in the example `mymap`) is the same as the name of the map you have created.
+
+\--- /hint \---
+
+\--- hint \---
+
+You can add an icon by adding another line within the marker to specify `icon: "nameofpicture.png"`. Don't forget to put a comma at the end of the `map` line to indicate that there is another marker property you would like to set.
+
+\--- /hint \---
+
+\--- hint \---
+
+If you specify a fixed file name like `nameofpicture.png`, then the marker icon will always be the same. We created a variable earlier which contains the picture name: put the variable `emoji` as the specified icon to use the right emoji from the data.
 
 ```JavaScript
 var marker = new google.maps.Marker({
