@@ -2,7 +2,7 @@
 title: Where's Zombie?
 hero_image: images/banner.png
 description: Use GPS on your phone to play an outdoor zombie game. Collect the supplies but avoid the zombies!
-theme: yellow
+theme: yellow #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 3
 listed: true
 ingredient: false
