@@ -2,7 +2,7 @@
 title: Unde e Zombie?
 hero_image: images/banner.png
 description: Utilizează GPS-ul pe telefonul tău pentru a juca un joc cu zombi în aer liber. Adună proviziile, dar evita zombii!
-theme: yellow
+theme: yellow #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 3
 listed: true
 ingredient: false
