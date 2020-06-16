@@ -54,13 +54,27 @@ Add this line of code immediately below the previous line, replacing `###` with 
 
 [[[generic-api-google-maps-marker]]]
 
-\--- hints \--- \--- hint \--- Instead of putting in a fixed latitude/longitude like in the example, use the `marker_position` variable to tell the marker where it should be placed. \--- /hint \---
+\--- hints \--- \--- hint \---
 
-\--- hint \--- Check that the name of the map (in the example `mymap`) is the same as the name of the map you have created. \--- /hint \---
+Instead of putting in a fixed latitude/longitude like in the example, use the `marker_position` variable to tell the marker where it should be placed.
 
-\--- hint \--- You can add an icon by adding another line within the marker to specify `icon: "nameofpicture.png"`. Don't forget to put a comma at the end of the `map` line to indicate that there is another marker property you would like to set. \--- /hint \---
+\--- /hint \---
 
-\--- hint \--- If you specify a fixed file name like `nameofpicture.png`, then the marker icon will always be the same. We created a variable earlier which contains the picture name: put the variable `emoji` as the specified icon to use the right emoji from the data.
+\--- hint \---
+
+Check that the name of the map (in the example `mymap`) is the same as the name of the map you have created.
+
+\--- /hint \---
+
+\--- hint \---
+
+You can add an icon by adding another line within the marker to specify `icon: "nameofpicture.png"`. Don't forget to put a comma at the end of the `map` line to indicate that there is another marker property you would like to set.
+
+\--- /hint \---
+
+\--- hint \---
+
+If you specify a fixed file name like `nameofpicture.png`, then the marker icon will always be the same. We created a variable earlier which contains the picture name: put the variable `emoji` as the specified icon to use the right emoji from the data.
 
 ```JavaScript
 var marker = new google.maps.Marker({
