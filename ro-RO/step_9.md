@@ -61,17 +61,29 @@ alert("Found the " + what_is_it );
 
 + Elimină `all_markers[i]` de pe hartă, astfel încât jocul să nu îi spună jucătorului că a găsit același lucru în continuu.
 
-\--- hints \--- \--- hint \--- Amintește-ți că am scos un marcaj din harta înainte, când am oprit atacul emoji-urilor zâmbărețe. \--- /hint \---
+\--- hints \--- \--- hint \---
 
-\--- hint \--- Pentru a elimina un marcaj de pe hartă, setează harta marcajului pe `null`, ceea ce înseamnă că nu există o hartă în acest caz. \--- /hint \---
+Remember that we removed a marker from the map before, when we stopped the attack of the smileys.
 
-\--- hint \--- Va trebui să folosești metoda `.setMap()` asupra marcajului. \--- /hint \---
+\--- /hint \---
+
+\--- hint \---
+
+To remove a marker from the map, set the map of the marker to `null`, which means no map in this case.
+
+\--- /hint \---
+
+\--- hint \---
+
+You will need to use the `.setMap()` method on the marker.
+
+\--- /hint \---
 
 \--- /hints \---
 
 + În final, să adăugăm un scor. Încă o dată, localizează linia `var zombie_map;` și adăugă o altă linie de cod sub ea pentru a crea o variabilă numită `score`.
 
-Dacă jucătorul a găsit un zombi, în jocul meu nu primesc puncte. Poate că dacă te simți îndrăzneț, ai putea scădea jucătorului tău punctele! Dacă au găsit un spital sau un magazin de arme, primesc 10 puncte.
+If the player found a zombie, in my game they don't get any points. Perhaps if you are feeling particularly mean you could give your player minus points in your game! If they found a hospital or a weapon store they get 10 points.
 
 + Iată niște linii în pseudo-cod pentru codul pe care vrem să îl adăugăm. Tradu-l în cod real și adăugă-l în programul tău.
 
@@ -81,23 +93,33 @@ DACĂ ceea ce au găsit nu este zombi
     ALERTĂ Scorul tau este + scor
 ```
 
-Adaugă codul tău aici:
+Add your code here:
 
-![Adaugă un scor](images/add-score.png)
+![Add a score](images/add-score.png)
 
 \--- hints \---
 
-\--- hint \--- Am elaborat deja ce au găsit și le-am stocat în variabila `what_is_it`. Folosește acest lucru pentru a crea o condiție care spune că conținutul acestei variabile nu este egal (`!=`) cu un zombi. \--- /hint \----
+\--- hint \---
 
-\--- hint \--- Poți adăuga puncte la o variabilă în felul următor:
+We already worked out what they found and stored it in the variable `what_is_it`. Use this to create a condition which says that the contents of this variable is not equal to (`!=`) zombie.
+
+\--- /hint \----
+
+\--- hint \---
+
+You can add on points to a variable like this:
 
 ```javascript
 score += 10
 ```
 
-Aceasta înseamnă „adaugă +10 valorii precedente a variabilei `scor`". \--- /hint \----
+This means "`score` is whatever it was before plus 10".
 
-\--- hint \--- Soluție:
+\--- /hint \----
+
+\--- hint \---
+
+Solution:
 
 ```javascript
 if( what_is_it != "zombie"){
