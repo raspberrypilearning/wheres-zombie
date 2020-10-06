@@ -1,40 +1,40 @@
-## Create the markers
+## मार्कर्स बनाएं
 
-+ Below the line `var zombie_map;`, add another line to create a variable called `all_markers`. Set it equal to `[]`, which is a blank array. This will eventually store a reference to each of the markers we are about to create.
++ `var zombie_map;` के नीचे एक लाइन (line) में एक वरिएबल (variable) `all_markers` जोड़े। इसे `[]` के बराबर सेट कर दें जो एक खाली सरणी (blank array) है। यह अंततः हमारे द्वारा बनाए जाने वाले प्रत्येक मार्कर के संदर्भ (reference) को संग्रहीत करेगा।
 
-+ Position your cursor inside the `initMap()` function, just below the code for creating the zombie map.
++ अपने कर्सर (cursor) को `initMap()` फंक्शन (function) के भीतर रखे, कोड के ठीक नीचे ताकि आप ज़ौंबी नक्शा बना सके।
 
-![Add marker code here](images/add-marker-code.png)
+![यहां मार्कर कोड (marker code) जोड़ें](images/add-marker-code.png)
 
-+ Create a for loop that will run once for every marker in the `markers` array we created in the previous step.
++ एक फॉर लूप (for loop) बनाए जो एक बार चलेगा हर मार्कर (marker) के लिए जो हमने `markers` सरणी (array) में पहले बनाए थे।
 
 [[[generic-javascript-for-loop-array]]]
 
-Inside the for loop, the line of marker data we are currently looking at is `markers[i]` - the loop will add `1` to the variable `i` each time it runs, so we will be looking at each line of data, one by one.
+फॉर लूप (for loop) के भीतर, अभी हम जिस मार्कर डेटा की लाईन को देख रहे है, वह है `markers[i]` - लूप इस `i` वेरिएबल में `1` जोड़ता जाएगा, जब भी वह कोड चलागा, तब हम एक-एक करके डेटा की हर लाइन को देख सकेंगे।
 
-The first line of data looks like this:
+डेटा की पहली पंक्ति इस तरह दिखती है:
 
 ```html
 51.90769026213801 -2.068905830383301 zombie.png
 ```
 
-We want to end up with this data as an array, so we will need to split it up just like we did in the previous step.
+हम अंत में इस डेटा (data) को सरणी के रूप में चाहते हैं, इसलिए हमें इसे उसी तरह विभाजित करना होगा जैसे हमने पिछले चरण में किया था।
 
-+ Add all the other lines of code in this step inside your for loop. First, `trim()` any unwanted spaces from the beginning and end of the data, like so:
++ इस चरण में बाकी की सारी कोड की पंक्तियां फॉर लूप (for loop) के भीतर जोड़ें। पहले डाटा में अनावश्यक स्थानों (spaces) को शुरुआत और अंत से `trim()` करें।
 
 ```JavaScript
 var marker_data = markers[i].trim();
 ```
 
-+ Now split the string up just like we did before, but this time split wherever there is a space:
++ अभी स्ट्रिंग (string) को विभाजित करें, वैसे ही जैसे हमने पहले किया था, पर इस बार विभाजित वहां करें जहा खाली स्थान (space) हो:
 
 ```JavaScript
 marker_data = marker_data.split(" ");
 ```
 
-Doing so will give you an array called `marker_data`, which contains three values. In order, these are: the latitude, the longitude, and the marker image file.
+ऐसा करने पर आपको एक `marker_data` नामक array मिलेगा, जिसमे, 3 तरह के मान होंगे। क्रम में, ये हैं: अक्षांश (latitude), देशांतर (longitude) और मार्कर छवि (marker image) फ़ाइल।
 
-+ Create variables to name each of these values. We've done the first for you:
++ इनमे से प्रत्येक मान (value) को नाम देने के लिए वेरिएबल बनाएं। हमने आपके लिए पहला काम कर दिया है:
 
 ```JavaScript
 var latitude = marker_data[0];
@@ -42,39 +42,39 @@ var longitude = ?;
 var emoji = ?;
 ```
 
-+ To be able to add the marker at the correct position, you need to create a `LatLng` object.
++ मार्कर सही जगह जोड़ने के लिए, आपको एक `LatLng` ऑब्जेक्ट (object) बनाना पड़ेगा।
 
 ```JavaScript
 var marker_position = new google.maps.LatLng(###, ###);
 ```
 
-Add this line of code immediately below the previous line, replacing `###` with the latitude and longitude variables.
+यह कोड की पंक्ति ठीक पहली पंक्ति के नीचे जोड़े, `###` को अक्षांश(latitude) और देशान्तर(longitude) वेरिएबल से बदले।
 
-+ Still inside the loop, write some code to create a marker at the `marker_position`, with the `icon:` set to the emoji variable.
++ लूप के भीतर भी, `marker_position` स्थान पर मार्कर जोड़ने के लिए कोड लिखे और `icon:` को इमोजी वेरिएबल (emoji variable) पर सेट करें।
 
 [[[generic-api-google-maps-marker]]]
 
 \--- hints \--- \--- hint \---
 
-Instead of putting in a fixed latitude/longitude like in the example, use the `marker_position` variable to tell the marker where it should be placed.
+उदाहरण में जैसे एक तय किए गए अक्षांश / देशांतर में रखने के बजाय, `marker_position` वेरिएबल (variable) का उपयोग करें, मार्कर को बताने के लिए जहां इसे जोड़ा जाना चाहिए।
+
+\--- /hint \---
+
+\--- /hint \---
+
+यह जांच ले की नक्शे का नाम (उदाहरण के लिए `mymap`) वहीं है जो आपने बनाया था।
 
 \--- /hint \---
 
 \--- hint \---
 
-Check that the name of the map (in the example `mymap`) is the same as the name of the map you have created.
+आप मार्कर के अंदर एक और पंक्ति जोड़ के एक आइकन (icon) जोड़ सकते है, `icon: "nameofpicture.png"`। `map` पंक्ति के अंत में अल्पविराम (,) डालना न भूले जो, यह यह बताता है कि एक और मार्कर प्रॉपर्टी (marker property) मौजूद है जिसे आप सेट कर सकते है।
 
 \--- /hint \---
 
 \--- hint \---
 
-You can add an icon by adding another line within the marker to specify `icon: "nameofpicture.png"`. Don't forget to put a comma at the end of the `map` line to indicate that there is another marker property you would like to set.
-
-\--- /hint \---
-
-\--- hint \---
-
-If you specify a fixed file name like `nameofpicture.png`, then the marker icon will always be the same. We created a variable earlier which contains the picture name: put the variable `emoji` as the specified icon to use the right emoji from the data.
+यदि आप इस `nameofpicture.png` फ़ाइल के नाम को उल्लेखित करते है, तो मार्कर आइकन (marker icon) हमेशा वहीं रहेगा। हमने पहले एक वेरिएबल (variable) बनाया था जिसमें चित्र का नाम है: `emoji` वेरियबल डालें जो डेटा (data) से सही इमोजी (emoji) का उपयोग करेगा।
 
 ```JavaScript
 var marker = new google.maps.Marker({
@@ -88,12 +88,12 @@ var marker = new google.maps.Marker({
 
 \--- /hints \---
 
-+ Immediately after the end of the `marker` code, but still within the loop, add the following line to save a reference to this marker in our list of `all_markers`. We will need this list in a later step.
++ `marker` कोड के ठीक बाद, पर लूप (loop) के अंदर, निम्न पंक्तियाँ जोड़े अपने मार्कर के रिफरेन्स (reference) को अपने लिस्ट `all_markers` में सेव करने के लिए। हमें बाद के चरण में इस सूची की आवश्यकता होगी।
 
 ```JavaScript
 all_markers.push(marker);
 ```
 
-+ Save your code and refresh the page. Test that all of your markers show up on the map. If they do not show up properly, perhaps you could look in the JavaScript **console** to see if there are any error messages for you to resolve?
++ अपना कोड सेव (save) करें और पेज को रिफ्रेश (refresh) करें। परीक्षण करें कि आपके सभी मार्कर (marker) नक्शे पर दिखाई देते हैं। यदि वह ढंग से दिखाई नहीं दे रहे है, तो शायद आप JavaScript **console** में देख सकते है कि कहीं कोई त्रुटि संदेश, आपके हल करने के लिए है या नहीं।
 
 [[[generic-javascript-opening-console]]]
