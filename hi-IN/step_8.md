@@ -1,25 +1,25 @@
-## Attack of the smileys
+## स्माईलीस (smileys) का हमला
 
-When you tested your map on your phone, you probably thought you were being attacked by smileys rather than zombies! This is because the page creates a brand new marker every time the player moves, but doesn't remove the markers of their previous positions. Eventually this gets really confusing, because you can't tell where you are from where you've been!
+जब आपने अपने फ़ोन पर अपने नक्शे का परीक्षण किया, तो आपको लगा होगा कि शायद आपको ज़ौंबीस के बजाय स्माईलीस द्वारा हमला किया जा रहा है! ऐसा इसलिए है क्योंकि पेज हर बार खिलाड़ी के हिलने पर एक नया मार्कर (marker) बनाता है, लेकिन अपने पिछले पदों के मार्करों को नहीं हटाता है। आखिरकार यह भ्रामक हो जाता है, क्योंकि आप यह नहीं बता सकते कि आप कहाँ से हैं!
 
-![Attack of the smileys](images/attack-smileys.png)
+![स्माईलीस (smileys) का हमला](images/attack-smileys.png)
 
-Continue editing the code on your computer. You can re-upload the code to GitHub if you want to test it outside.
+अपने कंप्यूटर पर कोड (code) संपादित (edit) करना जारी रखें। आप कोड को GitHub पर पुनः अपलोड कर सकते हैं यदि आप इसका परीक्षण बाहर करना है।
 
-+ Locate the line `var zombie_map;`, and below it add a new variable called `old_position`.
++ `var zombie_map;` पंक्ति के नीचे एक नया `old_position` नामक वेरिएबल (variable) बनाएँ।
 
-+ Inside the `initMap()` function, create a marker called `old_position` at the same location you centered your map on when you created it. (It actually doesn't matter what location this marker is initialised at, as its location value will be overwritten almost immediately, but it does need to be initialised. We just used the map's central location because it was handy!)
++ `initMap()` फंक्शन के अंदर, एक `old_position` नामक मार्कर बनाए, उसी स्थान पर जहां आपने अपना नक्शा केंद्रित किया था। (यह मायने नहीं रखता है कि इस मार्कर को किस स्थान पर शुरू किया गया है, क्योंकि इसके स्थान का मान लगभग तुरंत ही पुनः लिखा जाएगा, लेकिन इसे आरंभ करने की आवश्यकता है। हमने नक्शे के केंद्रीय स्थान का उपयोग इसलिए किया क्योंकि यह आसान था!)
 
-+ Locate your function `set_my_position()`. Add a line of code so that the **first** thing the function does is to remove the old position marker from the map. `null` is a special key word that in this case means "no map".
++ अपने फ़ंक्शन (function) `set_my_position()` का पता लगाएँ। कोड की पंक्ति जोड़ें ताकि **first** चीज़ जो फंक्शन (function) करता है वह यह हो, नक्शे में से पुराने स्थान के मार्कर को निकाल दे। `null` एक ख़ास संकेत शब्द है जिसका इस समय मतलब है "कोई नक्शा नहीं" ("no map")।
 
 ```JavaScript
-old_position.setMap(null);
+old_position.setMap(null)
 ```
 
-+ Add another line of code to the function `set_my_position()`, but this time it should be the **last** thing the function does. This saves the new position marker you just created as the `old_position` so that next time when we create a new marker we know where the previous one was.
++ `set_my_position()` फंक्शन को कोड की एक और पंक्ति जोड़े, पर इस बार वह **last** चीज़ होनी चाहिए जो फंक्शन करेगा। यह आपके द्वारा अभी बनाए गए नए स्थान मार्कर (position marker) को `old_position` के रूप में सेव (save) करता है ताकि अगली बार जब हम एक नया मार्कर बनाएं तो हमें पता चले कि पिछला वाला कहाँ था।
 
 ```JavaScript
 old_position = marker;
 ```
 
-+ Save your code and upload it again to your web hosting service. Test the code out by walking around. You should see your player smiley move around, but this time there will be no trail of smileys, only one marker to show your current position. Phew!
++ अपना कोड सेव (save) करें और इसे फिर से अपनी वेब होस्टिंग सेवा (web hosting service) पर अपलोड (upload) करें। चारों ओर घूमकर कोड का परीक्षण करें। आपको अपने खिलाड़ी का स्माइली (smiley) घूमते हुए दिखना चाहिए, लेकिन इस बार स्माइली का कोई निशान नहीं होगा, केवल एक मार्कर (marker) आपकी वर्तमान स्थिति दिखाएगा। उफ़!
