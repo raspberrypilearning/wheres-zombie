@@ -1,19 +1,19 @@
-## Introduction
+## परिचय
 
-Use the GPS on your phone to make an outdoor zombie apocalypse game you can play with your friends. Collect the supplies to power up, but avoid the zombies!
+फ़ोन पे जीपीएस (GPS) का उपयोग घर के बाहर(आउटडोर) ज़ोंबी कयामत (apocalypse) का गेम खेलने के लिए करे, जो आप अपने मित्रों के साथ खेल सकते हैं। गेम में आगे बढ़ने के लिए आपूर्तिया (supplies) इकट्ठा करे पर जौंबीज़॒ से बचे!
 
-This resource expects you to have already mapped out the location of your goodies and zombies using the [Zombie apocalypse map](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"} resource.
+यह संसाधन आपसे यह अपेक्षा करता है की आप अपने जरूरत के सामान और जौंबीज़॒ के स्थान का नक्शा बना लिया है, [Zombie apocalypse map](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"} संसाधन की मदद से ।
 
-### What you will make
+### आप क्या बनाएंगे
 
-You will make a game that you can play outside using your mobile phone's GPS capabilities. Find the power-ups and avoid the zombies!
+आप एक गेम बनाएंगे जो आप घर के बाहर(आउटडोर गेम) खेल सकते है, अपने फोन के जीपीएस की क्षमताओं से। पावर-अप्स ढूंढिए और ‌‌ज़ौंबीज़॒ से बचे!
 
-![Example game](images/example-game.png)
+![उदाहरण का गेम(खेल)](images/example-game.png)
 
-### What you will learn
+### आप क्या सीखेंगे
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
+यह परियोजना(प्रोजेक्ट) निम्नलिखित पाठ्यक्रम [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}: के तत्वों को शामिल करता है।
 
-+ [Design basic 2D and 3D assets](https://curriculum.raspberrypi.org/design/creator/){:target="_blank"}
-+ [Apply abstraction and decomposition to solve more complex problems](https://curriculum.raspberrypi.org/programming/developer/){:target="_blank"}
-+ [Engage and share with the digital making community](https://curriculum.raspberrypi.org/community-and-sharing/creator/){:target="_blank"}
++ [2 डी और 3 डी संपत्ति (assets) डिजाइन करें ](https://curriculum.raspberrypi.org/design/creator/){:target="_ blank"}
++ [डिजिटल मेकिंग समुदाय (Digital Making community) के साथ जुड़ें और साझा करें](https://curriculum.raspberrypi.org/programming/developer/){:target="_ blank"}
++ [डिजिटल मेकिंग समुदाय (Digital Making community) के साथ जुड़ें और साझा करें](https://curriculum.raspberrypi.org/community-and-sharing/creator/){:target="_ blank"}
