@@ -1,17 +1,17 @@
-## What you will need
+## आपको किन चीज़ों की जरूरत होगी
 
-### Hardware
+### हार्डवेयर (hardware)
 
-+ A computer with an internet connection
-+ A smartphone with GPS
++ इंटरनेट कनेक्शन वाला कंप्यूटर
++ जीपीएस वाला स्मार्टफोन
 
-### Software
+### सॉफ्टवेयर (software)
 
-+ Internet browser (e.g. Google Chrome or Safari)
-+ Text editor (e.g. Notepad or Atom)
-+ If you want to play your game outside, you will need a place to host your web page on the internet. One way to do this is to host your page for free on GitHub.
++ इंटरनेट ब्राउज़र (जैसे Google Chrome या Safari)
++ टेक्स्ट एडिटर (Text Editor) (जैसे Notepad या Atom)
++ यदि आप अपना गेम घर के बाहर खेलना चाहते हैं, तो आपको इंटरनेट पर अपने वेब पेज (webpage) को होस्ट करने के लिए एक जगह की जरूरत होगी। इसे करने का एक तरीका है GitHub पर अपना वेबपेज (webpage) मुफ़्त में होस्ट करे।
 
-### Additional resources
+### अतिरिक्त संसाधन
 
-+ Emoji images: you can either make your own or use ones from [Wikimedia commons](https://commons.wikimedia.org/wiki/Emoji){:target="_blank"}
-+ A Google account (please [check whether you are old enough to create an account](https://support.google.com/accounts/answer/1350409?hl=en){:target="_blank"} before beginning this project)
++ इमोजी छवि (Emoji images): आप या तो अपना बना सकते हैं या [Wikimedia Commons](https://commons.wikimedia.org/wiki/Emoji){:target="_blank"} में से इस्तेमाल कर सकते है।
++ एक Google Account (खाता) (कृपया [जाँच करें कि क्या आप खाता बनाने की उम्र के हैं या नहीं](https://support.google.com/accounts/answer/1350409?hl=en){:target="_blank"} यह प्रोजेक्ट शुरू करने से पहले।
