@@ -1,15 +1,15 @@
-## Safety when playing the game
+## खेल(game) खेलते समय सुरक्षा/सलामती
 
-When you play a GPS-based game, it is important that you remain safe. Follow our tips to make sure you create a fun and safe game to play with your friends.
+जब आप एक जीपीएस-आधारित गेम खेलते हैं, तो यह महत्वपूर्ण है कि आप सुरक्षित रहें। आप अपने दोस्तों के साथ खेलने के लिए एक मज़ेदार और सुरक्षित गेम बनाए, यह निश्चित करने के लिए हमारी युक्तिओं/सुझावों का पालन करे।
 
-+ Set up your game map in an open area such as a park, so that you can have as much fun as possible exploring.
++ अपने गेम के नक्शे (गेम मैप) को एक पार्क जैसे खुले जगह में सेट करें, जिससे आप, जितना हो सके उतना ढूंढने/खोजने का ज़्यादा से ज़्यादा मज़ा प्राप्त कर सके।
 
-+ Don't add markers in places which are difficult or dangerous to reach, such as in the middle of roads or near the edges of cliffs. Make your goodies tricky to find, but not deadly.
++ उन स्थानों में मार्कर न जोड़ें जो पहुँचने में कठिन या खतरनाक हों, जैसे कि सड़कों के बीच में या चट्टानों के किनारों के पास। अपने उपहारों को ढूंढने/खोजने के लिए मुश्किल बनाए, पर घातक नहीं।
 
-+ If you find you have accidentally placed a marker inside somewhere which is private property, don't trespass, leave it alone. Just change your code for the next time you play!
++ अगर आपने गलती से एक मार्कर कहीं अंदर रखा है जो निजी संपत्ति है, तो अतिचार(ट्रेस्टपास) न करें, इसे जैसा है वैसा ही छोड़ दें। अगली बार जब आप खेलते हैं तो बस अपना कोड बदलें!
 
-+ Get permission from a parent or guardian to play the game and make sure they are having fun playing with you or know where you are.
++ गेम खेलने के लिए माता-पिता या अभिभावक (guardian) से अनुमति ले और ये सुनिश्चित करें कि वे आपके साथ खेलने में मज़े कर रहे हैं या जानते हैं कि आप कहाँ हैं।
 
-+ Remember to turn off location services on your phone after playing so that you don't accidentally share your location data online with other apps.
++ खेलने के बाद अपने फोन पर स्थान सेवाओं (Location services) को बंद करना याद रखें ताकि आप गलती से अपने स्थान के डेटा को अन्य एप्लिकेशन के साथ ऑनलाइन साझा न करें।
 
-+ Always play during the day, in well-lit areas. Zombies are rather keen on the dark...
++ हमेशा दिन के दौरान खेले, अच्छी तरह से रौशनी वाले क्षेत्रों में। ज़ौंबीज़॒ अंधेरे के लिए उत्सुक हैं...
