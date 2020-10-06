@@ -1,8 +1,8 @@
-## Retrieve the marker data
+## मार्कर डेटा को पुनः प्राप्त करें
 
-+ You can decide where your points of interest will be by creating a [Zombie apocalypse survival map](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"}. Here is an example map we created for a zombie game in the local park. The data for this map was copied from the **console**.
++ आप यह तय कर सकते है कि आपकी रुची कहा होगी [Zombie apocalypse survival map](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"}, में । यहाँ एक उदाहरण का नक्शा है जिसे हमने स्थानीय (local) पार्क में एक ज़ौंबीस गेम के लिए बनाया है। इस नक्शे का डेटा **console** से कापी किया गया है।
 
-![Map with data](images/map-precreated.png)
+![डेटा के साथ नक्शा](images/map-precreated.png)
 
 ```html
 51.90769026213801 -2.068905830383301 zombie.png
@@ -13,13 +13,13 @@
 51.90954352807475 -2.0659875869750977 weapons.png
 ```
 
-+ You will also need to copy the emoji files you used when you created the map, and paste them into the same directory as the `index.html` file for your game. We used the following emojis, but you may have chosen different ones on your map. ![Hospital](images/hospital.png) ![Weapons](images/weapons.png) ![Zombie](images/zombie.png)
++ आपको इमोजी फ़ाइलो को कापी करना पड़ेगा जो आपने नक्शे के लिए बनाया था, उन्हें उसी directory में रखना होगा जिसमे `index.html` फ़ाइल को रखा गया था। हमने निम्न इमोजिस का उपयोग किया है, पर आपने अलग इमोजिस चुने होंगे अपने नक्शे पर। ![अस्पताल](images/hospital.png) ![हथियार](images/weapons.png) ![ज़ोंबी](images/zombie.png)
 
-+ Locate the line of code `var zombie_map;`. Below it, on a blank line, create a new variable called `data`, and set it equal to the data you copied from the console. Pasting in your data might make your editor complain and highlight the lines of code in a strange way, so put a backtick (\`) at the start and the end of the data you pasted. This will tell JavaScript that what you pasted is a string split over multiple lines.
++ कोड की लाइन ढूंढिए,`var zombie_map;` । उसके नीचे, एक रिक्त रेखा पर, एक नया वरिएबल (variable) `data` बनाए, और उसे आपने जो डेटा कंसोल (console) से कापी किया है, उसके बराबर परिभाषित करें। आपके डेटा को पेस्ट (paste) करने से आपका एडिटर शिकायत कर सकता है और आपके कोड एक अलग ढंग से उभार सकता है, इसीलिए आप एक बैकटिक (backtick) (\`) अपने डेटा के शुरुआत और अंत में लगाएँ। यह JavaScript को सूचित कर देगा की आपने जो पेस्ट किया है वह एक स्ट्रिंग (string) है जो कई पंक्तियों (lines) में विभाजित किया गया है।
 
 [[[generic-javascript-create-variable]]]
 
-+ We want to handle each marker separately, so let's add some code on the following line to split up the data into separate lines. Each individual line is data for one marker, so we will split the data wherever the invisible newline character `\n` is detected.
++ हम प्रत्येक मार्कर (marker) को अलग से संभालना चाहते हैं, तो डेटा (data) को अलग-अलग पंक्तियों में विभाजित करने के लिए निम्न कोड जोड़ें। प्रत्येक व्यक्तिगत रेखा एक मार्कर के लिए डेटा है, इसलिए हम डेटा को विभाजित करेंगे जहां अदृश्य न्यूलाइन कैरेक्टर (newline character) `\n` का पता चलता है।
 
 ```JavaScript
 var markers = data.split("\n");
@@ -27,11 +27,11 @@ var markers = data.split("\n");
 
 [[[generic-javascript-split-string]]]
 
-We end up with an **array** of marker data which we will plot onto the map in the next step.
+हमारे पास अब बचता है एक **array** मार्कर डेटा जिससे हम नक्शे पर प्लॉट (plot) करेंगे अगले चरण में।
 
 ## \--- collapse \---
 
-## title: End result
+## title: अंतिम परिणाम
 
 ```JavaScript
 var data = `51.90769026213801 -2.068905830383301 zombie.png
