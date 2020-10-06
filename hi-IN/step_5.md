@@ -61,7 +61,7 @@ var marker_position = new google.maps.LatLng(###, ###);
 
 --- /hint ---
 
---- /hint ---
+--- hint ---
 
 यह जांच ले की नक्शे का नाम (उदाहरण के लिए `mymap`) वहीं है जो आपने बनाया था।
 

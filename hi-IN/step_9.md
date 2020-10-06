@@ -98,7 +98,7 @@ alert("Found the " + what_is_it );
 
 ![अंक जोड़ें](images/add-score.png)
 
---- hint ---
+--- hints ---
 
 --- hint ---
 
