@@ -1,10 +1,10 @@
-## Challenge: improve the game
+## चुनौती: गेम में सुधार करें
 
-Here are some ideas you could explore to improve your zombie game:
+यहाँ कुछ विचार दिए गए हैं जिनसे आप अपने ज़ोंबी गेम को बेहतर बना सकते हैं:
 
-+ Add descriptions to each of the markers you create, so the person has some background story about what they have found.
-+ Add markers that are randomly generated. For example, you could randomly generate zombies at different locations. You will want to restrict the possible latitudes and longitudes for these markers or you might be generating zombies on another continent - then somebody else would have to deal with them!
-+ Randomly delete a marker after a certain amount of time - perhaps the hospital got destroyed, or zombies found some of the weapons?
-+ Add a more sophisticated scoring system.
-+ Only reveal one of the markers at a time, revealing the next one whenever the first is reached, for a more 'treasure hunt' style of play.
-+ Replace all of the marker images with "?" icons—then you won't know until you get to a marker if you'll find a juicy weapon store or a den of zombies!
++ आपके द्वारा बनाए गए हर मार्कर का विवरण/वर्णन लिखे, जिससे जो व्यक्ति गेम खेल रहा हो, जो उसे मिला है, उसकी पहले की कहानी पता हो।
++ निरुद्देश्यता से (Random) निरुद्देश्यता सेढंग से उत्पन्न हुए मार्कर को जोड़िए। उदाहरण के लिए, आप अलग-अलग स्थानों पर निरुद्देश्यता से (random) ज़ोंबी उत्पन्न कर सकते हैं। आप इन मार्करों के लिए संभावित अक्षांश और देशांतर (latitudes and longitudes) को सीमित करना चाहेंगे या आप किसी अन्य महाद्वीप (continent) पर ज़ोंबी उत्पन्न कर रहे होंगे - फिर किसी और को उनसे निपटना होगा!
++ कुछ समय के बाद निरुद्देश्यता से (random) एक मार्कर को हटा दें - शायद अस्पताल नष्ट हो गया, या ज़ोंबी को कुछ हथियार मिले?
++ अधिक परिष्कृत(sophisticated) स्कोरिंग प्रणाली जोड़ें।
++ सिर्फ़ एक मार्कर को एक बार में दिखाए/प्रकट करें, अगले एक को प्रकट करते हुए जब भी पहला पहुंचें, खेल की अधिक 'ट्रेशर हंट' (treasure hunt) शैली का गेम बनाने के लिए।
++ सभी मार्कर छवियों(images) को "?" आइकनों (icons) से बदलें - फिर आपको तब तक यह पता नहीं चलेगा की वह एक अच्छा हथियार है या ज़ॉम्बीज़ की गुफा, जब तक आप मार्कर के बहुत करीब नहीं पहुँच जाते!!
