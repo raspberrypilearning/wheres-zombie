@@ -1,45 +1,45 @@
-## Test the GPS
+## देखिये यदि जीपीएस (GPS) काम कर रहा है या नही
 
-You probably want to test whether your player icon moves around as you move around, and to do this you'll need to go outside. This could be pretty inconvenient while holding a computer, so let's upload the web page to the internet so that you can access it on your phone!
+आप शायद परीक्षण करना पसंद करेंगे कि क्या आपका खिलाड़ी आइकन (icon) आपके के साथ-साथ घूमता है या नहीं, और ऐसा करने के लिए आपको बाहर जाने की जरूरत होगी। कंप्यूटर को पकड़ते समय यह बहुत असुविधाजनक हो सकता है, इसलिए चलो वेब पेज (webpage) को इंटरनेट पर अपलोड (upload) करें ताकि आप इसे अपने फोन (phone) पर चला सकें!
 
-### Important safety notes
+### महत्वपूर्ण सुरक्षा नोट
 
-Don't forget that when you upload things to the internet, anyone can see them. If you've centered the map on the latitude and longitude of your house, anyone who accesses the web page can see exactly where you live. It is safer to set up your zombie map in a communal area such as a park or a town centre so that you are not giving away your personal data.
+यह ना भूलें कि जब आप इंटरनेट पर चीजें अपलोड (upload) करते हैं, तो कोई भी उन्हें देख सकता है। यदि आपने नक्शे को अपने घर के अक्षांश और देशांतर (latitude and longitude) पर केंद्रित किया है, तो कोई भी व्यक्ति जो वेब पेज एक्सेस (access) करता है, वह ठीक उसी जगह देख सकता है जहाँ आप रहते हैं। किसी पार्क या शहर के केंद्र जैसे सांप्रदायिक जगह में अपने ज़ौंबीस नक्शे को स्थापित करना अधिक सुरक्षित है ताकि आप अपने व्यक्तिगत डेटा को खतरे में ना डालें।
 
-For the GPS to work, you will need to enable the location services on your phone. Be aware that this means that your phone will track your exact position. It is never a good idea to post your exact location in public on the internet, so to be safe, disable the location services again after you have played the zombie game to make sure no other apps can use your location data. Your location will only be used by the zombie game in the web page you have created—you know exactly what this code does, because you wrote it!
+जीपीएस (GPS) को काम करने के लिए, आपको अपने फ़ोन (Phone) पर स्थान सेवाओं (Location services) को चालू करना होगा। सचेत रहें हो कि इसका मतलब है कि आपका फ़ोन आपकी सही स्थिति को ट्रैक (track) करेगा। इंटरनेट पर अपने सटीक स्थान को सार्वजनिक रूप से पोस्ट (post) करना कभी भी एक अच्छा विचार नहीं है, इसलिए सुरक्षित होने के लिए, स्थान सेवाओं (Location Services) को फिर से बंद कर दें, ज़ौंबीस खेल खेलने के बाद, यह सुनिश्चित करने के लिए कि कोई अन्य ऐप आपके स्थान डेटा का उपयोग नहीं कर सकता है। आपका स्थान केवल आपके द्वारा बनाए गए वेब पेज में ज़ौंबीस गेम द्वारा उपयोग किया जाएगा - आपको पता है कि यह कोड वास्तव में क्या करता है, क्योंकि आपने इसे लिखा था!
 
-### Upload your code
+### अपना कोड अपलोड (upload) करें
 
-You can upload your zombie game onto any service that offers web hosting. You may already have some hosting available to you, in which case feel free to use that. We chose to use [GitHub Pages](https://pages.github.com/){:target="_blank"} because it is a trustworthy service and easy to use. To get started with it, follow these steps:
+आप अपने ज़ौंबी गेम को किसी भी सेवा पर अपलोड कर सकते हैं जो वेब होस्टिंग (Web hosting) प्रदान करती है। आपके पास पहले से ही कुछ होस्टिंग (hosting) उपलब्ध हो सकती हैं, जिस स्थिति में आप उसका उपयोग कर सकते हैं। हमने [GitHub Pages](https://pages.github.com/){:target="_blank"} का उपयोग किया क्योंकि यह एक भरोसेमंद सेवा है और इस्तेमाल करने में आसान है। इसके साथ आरंभ करने के लिए, इन चरणों का पालन करें:
 
-+ Sign up for a [GitHub account](https://github.com/join){:target="_blank"}
++ [GitHub account](https://github.com/join){:target="_blank"} का खाता खोलें (sign up)
 
-+ Visit the [instructions page](https://pages.github.com/){:target="_blank"}, and click on **Project site** and **Start from scratch**
++ (निर्देश पेज) [Instructions page](https://pages.github.com/){:target="_blank"} पर जाएं, और परियोजना वेबसाइट **(Project site)** पर क्लिक करें और **Start from scratch**
 
-![Github pages](images/github-pages.png)
+![Github pages (गिटहब पेजेस)](images/github-pages.png)
 
-+ Follow the instructions to create an index file as described, but instead of typing `<h1>Hello</h1>`, paste in the code from your `index.html` file before committing it
++ इंडेक्स फ़ाइल (index file) बनाने के लिए निर्देशों का पालन करें, लेकिन `<h1>Hello</h1>` टाइप करने के बजाय, अपने `index.html` फाइल से कोड पेस्ट करें, कमिट (commit) करने से पहले।
 
-+ You will also need to click on the **Upload files** button and upload the emoji files you are using
++ आपको **Upload files** बटन को भी दबाना पड़ेगा और अपनी इमोजी फाइलें (emoji files) अपलोड (upload) करनी पड़ेंगी
 
-+ Finally, follow Step 4 on the instructions page to set up your master branch as a GitHub Pages site, and then view your page by typing the address into a browser.
++ अंत में, निर्देश के पेज (page) पर चौथे चरण का पालन करे जिससे आपको पता चलेगा की आपके मास्टर ब्रांच (master branch) को GitHub Pages साइट कैसे बनाते है, और फिर अपने पेज को देखने के लिए उसका एड्रेस (address) टाइप कर सकते हैं किसी भी ब्राउज़र (browser) में।
 
-## Restrict your API key
+## अपनी API key को प्रतिबंधित करें
 
-Now that you have put your code online, your Google Maps API key is visible to everyone. Someone could take it and use it without your permission. You can stop this from happening by restricting where it can be used, so that it can only be used on your website.
+अब जब आपने अपना कोड (code) ऑनलाइन डाल दिया है, तो आपकी Google Maps API key सभी को दिखाई दे रही है। कोई इसे ले सकता है और आपकी अनुमति के बिना इसका उपयोग कर सकता है। आप इसे प्रतिबंधित करके ऐसा करने से रोक सकते हैं इसका उपयोग कहाँ कहाँ किया जा सके, ताकि इसका उपयोग केवल आपकी वेबसाइट (website) पर हो।
 
-+ Head back over to the [Google APIs console](https://console.developers.google.com/flows/enableapi?apiid=picker&credential=client_key){:target="_blank"} and click on **Select a project** at the top left of the page.
++ अभी [Google APIs console](https://console.developers.google.com/flows/enableapi?apiid=picker&credential=client_key){:target="_blank"} पर जाएं और **Select a project** पर क्लिक करे, जो पेज के ऊपर के बाए हिस्से में है।
 
-![Select a project](images/select-a-project.png)
+![कोई प्रोजैक्ट चुनें](images/select-a-project.png)
 
-+ Select the project you made when you set up your API key. This might still be called **My project** if you didn't change its name.
++ उस प्रोजेक्ट (project) को चुने जिसमे आपने अपने API key का इस्तेमाल किया है। इसका नाम अभी भी **My project** होगा अगर आपने इसका नाम नहीं बदला।
 
-+ Click on **Credentials** on the left, then click on your API key.
++ बाईं ओर पर **Credentials** क्लिक करें, फिर अपनी एपीआई की (API Key) पर क्लिक करें।
 
-![Select a project](images/credentials.png)
+![कोई प्रोजैक्ट चुनें](images/credentials.png)
 
-+ Under **Key restriction**, select **HTTP referrers** and in the box, add the base URL of your website, with a `*` at each end. For example, my code was hosted at `http://lawsie.github.io/`, so I put `*lawsie.github.io/*`. Click **Save**.
++ **Key restriction** के नीचे, **HTTP referrers** को चुने और बॉक्स(box) में, अपनी वेबसाइट की आधार URL जोड़े, `*` के साथ हर छोर पर। उदाहरण के लिए, मेरा कोड `http://lawsie.github.io/` पर होस्ट किया गया था, तो मैंने `*lawsie.github.io/*` जोड़ा। **Save** दबाए।
 
-![Key restriction](images/key-restriction.png)
+![Key प्रतिबंध](images/key-restriction.png)
 
-+ Your key should now only work on your website, and not anywhere else. Note that if you now try to look at the map on your computer, it will not work because the request is not coming from your website. You might want to create an extra API key that is unrestricted, and ONLY use that key on your private computer for testing.
++ आपकी API Key (एपीआई की) अब केवल आपकी वेबसाइट पर काम करेगी, न कि कहीं और। ध्यान दें कि यदि आप अब अपने कंप्यूटर पर नक्शे को देखने की कोशिश करते हैं, तो यह काम नहीं करेगा क्योंकि वह अनुरोध (request) आपकी वेबसाइट (website) से नहीं आ रहा है। आप एक अतिरिक्त API key (एपीआई की) बनाना चाहते हैं जो अप्रतिबंधित हो, और केवल परीक्षण के लिए अपने निजी कंप्यूटर पर उस key का उपयोग करें।
