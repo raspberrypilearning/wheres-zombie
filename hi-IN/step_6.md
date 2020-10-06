@@ -1,8 +1,8 @@
-## Display your current position
+## अपना वर्तमान/मौजूदा स्थान दिखाइए/प्रदर्शित कीजिये
 
-Let's display the player's current position on the map.
+नक्शे पर खिलाड़ी की वर्तमान स्थान प्रदर्शित करते हैं।
 
-+ Inside the `initMap()` function, after you create the map, add some code to use HTML5 geolocation to find the player's current position:
++ `initMap()` फ़ंक्शन के अंदर, नक्शा बनाने के बाद, खिलाड़ी का वर्तमान स्थान जानने के लिए HTML5 geolocation का उपयोग करने के लिए कोड जोड़ें:
 
 ```javascript
 if(navigator.geolocation) {
@@ -13,28 +13,28 @@ else {
 }
 ```
 
-This code checks whether the player's location can be found using the web browser. If it cannot be found, a pop-up box will appear with a message. If it can, we set up code to `watchPosition`. This code will constantly monitor the position of the device, and will call the function `set_my_position` whenever the position of the device changes.
+यह कोड यह जांचता है कि क्या वेब ब्राउज़र (web browser) का उपयोग करके खिलाड़ी का स्थान पाया जा सकता है या नहीं। यदि यह नहीं मिल सकता है, तो एक संदेश के साथ एक पॉप-अप (pop-up) बॉक्स दिखाई देगा। यदि यह हो सकता है, तो हम यह कोड `watchPosition` को सेट करते है। यह कोड लगातार डिवाइस (device) की स्थान की निगरानी करेगा, और जब भी डिवाइस की स्थान बदलता है, `set_my_position` फ़ंक्शन कॉल हो जाएगा।
 
-+ To be able to display the player's position on the map, we need to write the `set_my_position` function. After the closing bracket of the `initMap()` function, create a new function called `set_my_position`.
++ नक्शे पर खिलाड़ी का स्थान प्रदर्शित करने के लिए, हमें `set_my_position` फंक्शन (function) को परिभाषित करना होगा। `initMap()` फ़ंक्शन के समापन कोष्ठक के बाद, एक `set_my_position` नामक नया फ़ंक्शन बनाएं।
 
 [[[generic-javascript-create-a-function]]]
 
-+ This function needs the current latitude and longitude by the `watchPosition` comand we set up. Add an **argument** called `position` in the function's brackets so that this data will be automatically passed to it.
++ इस फ़ंक्शन को `watchPosition` कमांड (command) द्वारा वर्तमान के अक्षांश (latitude) और देशांतर (longitude) की जरूरत हैं। फंक्शन (function) के कोष्ठक में एक `position` नामक **argument** जोड़े जिससे यह डेटा स्वचालित रूप से उसे दे दिया जाएगा।
 
 `function set_my_position(position){`
 
-+ The latitude can be found within the function as `position.coords.latitude`, and the longitude as `position.coords.longitude`. Following the same process as you did in the previous step, create a LatLng object called `pos` inside the `set_my_position` function. The object should contain the latitude and longitude values.
++ अक्षांश (latitude) फंक्शन के रूप में इस प्रकार है `position.coords.latitude`, और देशांतर (longitude) इस प्रकार पाया जा सकता है `position.coords.longitude`। उसी प्रक्रिया का पालन करते हुए जैसा कि आपने पिछले चरण में किया था, एक LatLng object बनाएं, `set_my_position` फंक्शन(function) के अंदर, जिसे `pos` कहा जाता है। ऑब्जेक्ट में अक्षांश (latitude) और देशांतर (longitude) के मान होने चाहिए।
 
 ```JavaScript
 var pos = new google.maps.LatLng(###, ###);
 ```
 
-+ Still inside the function, create a marker which is situated at the LatLng object's position. You can do this the same way you created markers in the previous step. However, you should choose a different icon for this marker. we chose to represent the player as a smiley face, but you can choose any emoji you like. Don't forget to copy and paste the emoji image file you want to use into the same folder as your `index.html` code.
++ फ़ंक्शन (function) के अंदर, एक मार्कर (marker) बनाएं जो LatLng ऑब्जेक्ट (object) के स्थान में स्थित होगा। आप उसी तरह से कर सकते हैं जैसे आपने पिछले चरण में मार्कर बनाए थे। हालाँकि, आपको इस मार्कर के लिए एक अलग आइकन( icon) चुनना चाहिए। हमने एक स्माइली चेहरे (smiley face) के रूप में खिलाड़ी का प्रतिनिधित्व किया है, लेकिन आप अपनी पसंद का कोई भी इमोजी (Emoji) चुन सकते हैं। इमोजी इमेज फाइल (emoji image file) उसी फ़ोल्डर में डालना न भूलें, जिसमें आपने `index.html` के कोड को जमा किया है।
 
-![Player emoji](images/player.png)
+![खिलाड़ी इमोजी (emoji)](images/player.png)
 
-+ Save your code and refresh the internet browser. If a message pops up asking whether the browser can use your location data, press **Allow**. You should see your player emoji appear wherever you currently are.
++ अपना कोड सेव (save) करें और अपने इंटरनेट ब्राउज़र (internet browser) को रिफ़्रेश (refresh) करें। यदि कोई संदेश यह पूछता है कि क्या ब्राउज़र आपके स्थान के डेटा का उपयोग कर सकता है, तो **Allow** दबाए । आप जहां कहीं भी हो, आपको अपना खिलाड़ी इमोजी (emoji) वहीं दिखाई देना चाहिए।
 
-![Where you are on the map](images/location-map.png)
+![आप नक्शे में कहां हैं](images/location-map.png)
 
-+ You might want to adjust the `zoom` value in your map at this stage if it is a little too far out to see the locations of the icons clearly. Using a larger value will zoom in on the map.
++ इस चरण पे आप `zoom` को अपने नक्शे पे समायोजित (adjust)) करना पसंद करेंगे यदि कुछ स्थान के आइकन (icons) बहुत दूर दिखाई पड़ रहे हों। बड़े मूल्य का उपयोग करने से नक्शे पर ज़ूम इन (zoom in) हो जाएगा।
