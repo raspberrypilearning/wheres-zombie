@@ -19,14 +19,16 @@ last_tested: 2017-09-01
 steps:
 - title: परिचय
 - title: आपको किन चीजों की जरूरत होगी
-  completion: engaged
 - title: नक्शा बनाएं
 - title: मार्कर डेटा को पुनः प्राप्त करें
+  completion:
+  - engaged
 - title: मार्कर्स बनाएं
 - title: अपना वर्तमान/मौजूदा स्थान दिखाइए/प्रदर्शित कीजिये
 - title: देखिये यदि जीपीएस(GPS) काम कर रहा है या नही
 - title: स्माईलीस (smileys) का हमला
 - title: वस्तुओ को ढूंढिए/खोजिये
 - title: खेल(game) खेलते समय सुरक्षा
-  completion: internal
+  completion:
+  - internal
 - title: 'चुनौती: गेम में सुधार करें'
