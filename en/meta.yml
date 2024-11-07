@@ -5,7 +5,7 @@ description: Use GPS on your phone to play an outdoor zombie game. Collect the s
   but avoid the zombies!
 theme: yellow
 duration: 3
-listed: true
+listed: false
 ingredient: false
 copyedit: true
 curriculum: 2, design-1, programming-2, phys-comp-0, manufacture-0, community-1
